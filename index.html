@@ -27,7 +27,8 @@
             <a href="javascript:void(0)" class="nav-logo" onclick="showPage('hero')">
                 <span class="monogram">LL</span> <i class="fa-solid fa-feather-pointed"></i> LIMINAL LIT
             </a>
-            <div class="nav-links">
+<button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+<div class="nav-links" id="nav-links">
                 <a href="javascript:void(0)" onclick="showPage('hero')">Home</a>
                 <a href="javascript:void(0)" onclick="showPage('about')">Mission</a>
                 <a href="javascript:void(0)" onclick="showPage('submissions')">Issue I Contest</a>
@@ -179,12 +180,16 @@
                 target.classList.add('active');
             }
 
-            // Force browser to the absolute top (fixes the 'too high' issue)
-            window.scrollTo({
+          window.scrollTo({
                 top: 0,
                 left: 0,
                 behavior: 'instant'
             });
+        }
+
+        function toggleMenu() {
+            const nav = document.getElementById('nav-links');
+            nav.classList.toggle('open');
         }
     </script>
 </body>
