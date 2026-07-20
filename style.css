@@ -920,9 +920,10 @@ html {
   left: 0;
   min-width: 240px;
   padding: 12px 0;
-  background: rgba(253, 251, 247, 0.98);
-  border: 1px solid rgba(184, 134, 11, 0.15);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  background: #FFFFFF;
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
   z-index: 1001;
 }
 
@@ -942,6 +943,11 @@ html {
 }
 
 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Click/tap support (mobile + desktop) — works alongside the hover rule above */
+.dropdown.open .dropdown-content {
   display: block;
 }
 
