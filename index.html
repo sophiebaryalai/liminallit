@@ -16,7 +16,14 @@
             <a href="javascript:void(0)" class="nav-logo" onclick="showPage('hero')">
                 <span class="monogram">LL</span> <i class="fa-solid fa-feather-pointed"></i> LIMINAL LIT
             </a>
-          <div class="nav-links">
+
+            <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+          <div class="nav-links" id="navLinks">
   <a href="javascript:void(0)" onclick="showPage('hero')">Home</a>
 
   <a href="javascript:void(0)" onclick="showPage('about')">Mission</a>
@@ -56,6 +63,8 @@
 </div>
         </div>
     </nav>
+
+    <div class="mobile-nav-overlay" id="navOverlay" onclick="closeMobileMenu()"></div>
 
     <header id="hero" class="hero section active">
         <div class="hero-inner">
@@ -3690,7 +3699,39 @@ Submit for Editorial Feedback
             });
         });
 
+        // --- Mobile hamburger menu ---
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const overlay = document.getElementById('navOverlay');
+            const hamburger = document.querySelector('.hamburger');
+            const isOpen = navLinks.classList.contains('open');
+
+            if (isOpen) {
+                closeMobileMenu();
+            } else {
+                navLinks.classList.add('open');
+                overlay.classList.add('open');
+                hamburger.classList.add('open');
+                document.body.classList.add('menu-open');
+            }
+        }
+
+        function closeMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const overlay = document.getElementById('navOverlay');
+            const hamburger = document.querySelector('.hamburger');
+
+            navLinks.classList.remove('open');
+            overlay.classList.remove('open');
+            hamburger.classList.remove('open');
+            document.body.classList.remove('menu-open');
+            document.querySelectorAll('.dropdown.open').forEach(d => d.classList.remove('open'));
+        }
+
         function showPage(id) {
+            // Always close the mobile menu first so it never covers the new section
+            closeMobileMenu();
+
             // Hide all sections (including hero)
             const allPages = document.querySelectorAll('.section');
             allPages.forEach(page => {
@@ -3711,7 +3752,5 @@ Submit for Editorial Feedback
             });
         }
     </script>
-</body>
-</html>
 </body>
 </html>
