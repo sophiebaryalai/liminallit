@@ -920,10 +920,9 @@ html {
   left: 0;
   min-width: 240px;
   padding: 12px 0;
-  background: #FFFFFF;
-  border: 1px solid rgba(184, 134, 11, 0.3);
-  border-radius: 4px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+  background: rgba(253, 251, 247, 0.98);
+  border: 1px solid rgba(184, 134, 11, 0.15);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   z-index: 1001;
 }
 
@@ -943,11 +942,6 @@ html {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Click/tap support (mobile + desktop) — works alongside the hover rule above */
-.dropdown.open .dropdown-content {
   display: block;
 }
 
@@ -1080,145 +1074,18 @@ html {
   opacity: 0.75;
 }
 
-/* MOBILE HAMBURGER MENU */
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  margin-left: auto;
-  z-index: 1101;
-}
-
-.hamburger span {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: var(--navy);
-  border-radius: 2px;
-  transition: var(--transition);
-}
-
-.hamburger.open span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
-.mobile-nav-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(26, 46, 64, 0.45);
-  z-index: 900;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.mobile-nav-overlay.open {
-  display: block;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-body.menu-open {
-  overflow: hidden;
-}
+/* MOBILE */
 
 @media (max-width: 950px) {
   .nav-container {
-    justify-content: space-between;
-  }
-
-  .hamburger {
-    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .nav-links {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: min(320px, 82vw);
-    background: #FFFFFF;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    padding: 90px 30px 40px 30px;
-    box-shadow: -10px 0 40px rgba(0,0,0,0.15);
-    z-index: 1100;
-    overflow-y: auto;
-    transform: translateX(100%);
-    transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-
-  .nav-links.open {
-    transform: translateX(0);
-  }
-
-  .nav-links a {
-    margin-left: 0;
-    padding: 14px 0;
-    width: 100%;
-    border-bottom: 1px solid rgba(26, 46, 64, 0.08);
-    font-size: 0.85rem;
-  }
-
-  .nav-links a.nav-cta {
-    margin-top: 10px;
-    border-bottom: none;
-  }
-
-  /* Dropdowns become inline accordions instead of floating boxes */
-  .dropdown {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-left: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .dropdown .dropbtn {
-    width: 100%;
-    padding: 14px 0;
-    border-bottom: 1px solid rgba(26, 46, 64, 0.08);
-  }
-
-  .dropdown-content {
-    display: none;
-    position: static;
-    width: 100%;
-    min-width: 0;
-    padding: 0 0 6px 18px;
-    border: none;
-    box-shadow: none;
-    background: transparent;
-  }
-
-  .dropdown.open .dropdown-content {
-    display: block;
-  }
-
-  .dropdown-content a {
-    padding: 10px 0;
-    border-bottom: none;
-    font-size: 0.8rem;
-    opacity: 0.85;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 14px;
   }
 }
 
@@ -1964,4 +1831,202 @@ body.menu-open {
 .poem-text.prose-poem.amaltas-poem .amaltas-ending {
   margin-top: 1.75em !important;
   margin-bottom: 0 !important;
+}
+/* ===== VOICES ARCHIVE ===== */
+.voices-archive {
+  margin: 30px 0 60px 0;
+}
+.archive-heading {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.4rem;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+.archive-subhead {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-top: 6px;
+}
+.editor-note {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #546E7A;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.voice-card {
+  background: var(--white);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-left: 3px solid var(--gold);
+  margin-bottom: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+  transition: box-shadow 0.3s ease;
+}
+.voice-card[open] {
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+.voice-card summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.voice-card summary::-webkit-details-marker { display: none; }
+.voice-card summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--gold);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+.voice-card[open] summary::after {
+  transform: rotate(45deg);
+}
+.voice-summary-text {
+  display: flex;
+  flex-direction: column;
+}
+.voice-name {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--navy);
+}
+.voice-location {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #546E7A;
+  margin-top: 4px;
+}
+.voice-text {
+  padding: 0 30px 30px 30px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+.voice-text p {
+  font-size: 0.98rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.voice-text p:first-child { margin-top: 25px; }
+.voice-text p:last-child { margin-bottom: 0; }
+
+.status-heading {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--navy);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.prompts-label {
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+.prompts-list {
+  list-style: none;
+  padding: 0;
+}
+.prompts-list li {
+  margin-bottom: 10px;
+}
+/* ===== ISSUE DROPDOWN ===== */
+.issue-dropdown {
+  margin-bottom: 40px;
+}
+.issue-dropdown-summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0;
+  border-bottom: 2px solid var(--gold);
+}
+.issue-dropdown-summary::-webkit-details-marker { display: none; }
+.issue-dropdown-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+.issue-dropdown-subhead {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 8px;
+}
+.issue-dropdown-summary::after {
+  content: '+ View Issue I Voices';
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gold);
+  margin-top: 14px;
+}
+.issue-dropdown[open] .issue-dropdown-summary::after {
+  content: '– Hide Issue I Voices';
+}
+/* ===== SUBMIT TO ISSUE II CTA ===== */
+.submit-cta-box {
+  background: linear-gradient(
+    to right,
+    var(--soft-blue),
+    rgba(240,247,255,0.7)
+  );
+  color: var(--gold);
+  padding: 50px;
+  text-align: center;
+  margin: 50px auto 60px auto;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.submit-cta-heading {
+  font-family: 'Libre Baskerville', serif;
+  color: var(--gold) !important;
+  margin-bottom: 15px;
+}
+.submit-cta-box p {
+  color: var(--navy);
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+.submit-cta-box .btn-black {
+  background: var(--navy);
+  color: var(--white) !important;
+  padding: 18px 40px !important;
+  display: inline-block;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+.submit-cta-box .btn-black:hover {
+  background: var(--gold);
+  color: var(--navy) !important;
+}
+.submit-cta-box .btn-label {
+  display: inline-block;
+  line-height: 1;
+  margin-right: -1.5px;
 }
