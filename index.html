@@ -11,51 +11,49 @@
 </head>
 <body>
 
-    <nav class="nav-bar">
-        <div class="nav-container">
-            <a href="javascript:void(0)" class="nav-logo" onclick="showPage('hero')">
-                <span class="monogram">LL</span> <i class="fa-solid fa-feather-pointed"></i> LIMINAL LIT
-            </a>
-          <div class="nav-links">
-  <a href="javascript:void(0)" onclick="showPage('hero')">Home</a>
-
-  <a href="javascript:void(0)" onclick="showPage('about')">Mission</a>
-
-  <div class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Issues ▾</a>
-    <div class="dropdown-content">
-      <a href="javascript:void(0)" onclick="showPage('issue1')">
-        Issue I: Between
-      </a>
-    </div>
-  </div>
-            <a href="javascript:void(0)" onclick="showPage('submit')">Submit</a>
-
-  <div class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Contests ▾</a>
-    <div class="dropdown-content">
-      <a href="javascript:void(0)" onclick="showPage('submissions')">
-        Issue I Contest: Between
-      </a>
-    </div>
-  </div>
-
-  <a href="javascript:void(0)" onclick="showPage('voices')">Voices</a>
-
-  <a href="javascript:void(0)" onclick="showPage('editorial')">
-    The Initiative
-  </a>
-
-  <a href="javascript:void(0)" onclick="showPage('masthead')">
-    Founder
-  </a>
-
-  <a href="mailto:liminallit@gmail.com" class="nav-cta">
-    Contact
-  </a>
+   <nav class="nav-bar">
+<div class="nav-container">
+<a href="javascript:void(0)" class="nav-logo" onclick="showPage('hero')">
+<span class="monogram">LL</span> <i class="fa-solid fa-feather-pointed"></i> LIMINAL LIT
+</a>
+<button class="hamburger-btn" onclick="toggleMobileNav()" aria-label="Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+<div class="nav-links" id="navLinks">
+<a href="javascript:void(0)" onclick="showPage('hero'); closeMobileNav()">Home</a>
+<a href="javascript:void(0)" onclick="showPage('about'); closeMobileNav()">Mission</a>
+<div class="dropdown">
+<a href="javascript:void(0)" class="dropbtn">Issues ▾</a>
+<div class="dropdown-content">
+<a href="javascript:void(0)" onclick="showPage('issue1'); closeMobileNav()">
+Issue I: Between
+</a>
 </div>
-        </div>
-    </nav>
+</div>
+<a href="javascript:void(0)" onclick="showPage('submit'); closeMobileNav()">Submit</a>
+<div class="dropdown">
+<a href="javascript:void(0)" class="dropbtn">Contests ▾</a>
+<div class="dropdown-content">
+<a href="javascript:void(0)" onclick="showPage('submissions'); closeMobileNav()">
+Issue I Contest: Between
+</a>
+</div>
+</div>
+<a href="javascript:void(0)" onclick="showPage('voices'); closeMobileNav()">Voices</a>
+<a href="javascript:void(0)" onclick="showPage('editorial'); closeMobileNav()">
+The Initiative
+</a>
+<a href="javascript:void(0)" onclick="showPage('masthead'); closeMobileNav()">
+Founder
+</a>
+<a href="mailto:liminallit@gmail.com" class="nav-cta">
+Contact
+</a>
+</div>
+</div>
+</nav>
 
     <header id="hero" class="hero section active">
         <div class="hero-inner">
