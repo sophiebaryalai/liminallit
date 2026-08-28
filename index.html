@@ -16,20 +16,13 @@
             <a href="javascript:void(0)" class="nav-logo" onclick="showPage('hero')">
                 <span class="monogram">LL</span> <i class="fa-solid fa-feather-pointed"></i> LIMINAL LIT
             </a>
-
-            <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-          <div class="nav-links" id="navLinks">
+          <div class="nav-links">
   <a href="javascript:void(0)" onclick="showPage('hero')">Home</a>
 
   <a href="javascript:void(0)" onclick="showPage('about')">Mission</a>
 
   <div class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(event, this)">Issues ▾</a>
+    <a href="javascript:void(0)" class="dropbtn">Issues ▾</a>
     <div class="dropdown-content">
       <a href="javascript:void(0)" onclick="showPage('issue1')">
         Issue I: Between
@@ -39,7 +32,7 @@
             <a href="javascript:void(0)" onclick="showPage('submit')">Submit</a>
 
   <div class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(event, this)">Contests ▾</a>
+    <a href="javascript:void(0)" class="dropbtn">Contests ▾</a>
     <div class="dropdown-content">
       <a href="javascript:void(0)" onclick="showPage('submissions')">
         Issue I Contest: Between
@@ -63,8 +56,6 @@
 </div>
         </div>
     </nav>
-
-    <div class="mobile-nav-overlay" id="navOverlay" onclick="closeMobileMenu()"></div>
 
     <header id="hero" class="hero section active">
         <div class="hero-inner">
@@ -148,7 +139,7 @@ Submit to Issue II: After
     </p>
 
     <p>
-      <strong>Deadline:</strong> September 15th, 2026
+      <strong>Deadline:</strong> September 1st, 2026
     </p>
 
     <p>
@@ -405,7 +396,7 @@ Submit to Issue II: After
     <p>
       Sara Surani — Poetry<br>
       Hira Amir — Short Fiction<br>
-      Holly Sykes — Short Fiction<br>
+      Holly Sykes— Short Fiction<br>
       Penny Wei — Short Fiction<br>
       Jane Ann Valentine — Creative Nonfiction<br>
       Nathan Cover — Creative Nonfiction<br>
@@ -422,6 +413,8 @@ Submit to Issue II: After
 
   </div>
 </section>
+            </div>
+        </section>
   <section id="issue1" class="section">
   <div class="issue-page">
 
@@ -464,6 +457,7 @@ Submit to Issue II: After
     <span class="issue-divider">*</span>
 
 </div>
+    </div>
 
     <div class="issue-contents">
 
@@ -2174,10 +2168,9 @@ Submit to Issue II: After
 
       <p class="bio-label">About the Author</p>
 
-      <p>
+     <p>
     <strong>Daniel Gordon</strong> is a writer based in Vienna, Austria. His work has featured in <em>Long River Review</em> and is forthcoming in <em>Apricity Press</em> and <em>Thimble</em>. He works for a local newspaper and spends his free time writing short fiction and drinking more tea than water. Find him on Instagram <a href="https://www.instagram.com/daniel_gordon_stories/" target="_blank" rel="noopener noreferrer">@daniel_gordon_stories</a>.
 </p>
-
 
     </aside>
 
@@ -2453,6 +2446,7 @@ Submit to Issue II: After
 <p>
   We weren’t on the same shift for another week, so it was days later that I discovered she was going out with him again, this time to the ballet. When I asked her if she actually liked the opera and the ballet, she shrugged as if that wasn’t relevant. Did she like Neil? I asked. Again, she shrugged. She was still forming an opinion I thought, although how anyone couldn’t see he was completely detestable was beyond me. Unlike me, her head had never been turned by the many glitterati we’d met while clubbing, so perhaps there was something about Neil that I’d missed.
 </p>
+      </p>
 
       <p>
         The ballet was <em>Swan Lake</em>, which I’d always thought a gruesome story for children at Christmas, not least for a romantic date, ending as it does with a double suicide, but again Sam came away having enjoyed herself enough to allow Neil to progress to a weekend in the country. ‘Jealous, are you, little black swan?’ he said to me, a sneer on his lips. Sam wasn’t party to any of this, of course. She was in the loo at the back of the restaurant doing her hair before Neil whisked her away to the Cotswolds.
@@ -2511,7 +2505,7 @@ Submit to Issue II: After
       <p class="bio-label">About the Author</p>
 
       <p>
-        <strong>Holly Sykes</strong> is a published author of short fiction and writer of female-led novels. Holly won the Page Turner Award for Best Contemporary Fiction 2024 with her unpublished manuscript <em>Wooden Dolls</em>. Previously, it won the Portfolio Prize 2023 (MA, University of Lancaster). You can find her short stories and poetry in <em>Stand Magazine</em>, and <em>Dreamcatcher Magazine</em> (UK) and <em>The Apostrophe</em> and <em>Voice and Verse</em> (HK). Alongside working on her current novel and short stories, Holly also publishes <em>Beyond the Book Cover</em> on Substack, https://substack.com/@hollysykes1, which is featured in the Spring 2026 issue of <em>Mslexia</em>. Originally from the UK, she now lives in Hong Kong.
+        <strong>Holly Sykes </strong> is a published author of short fiction and writer of female-led novels. Holly won the Page Turner Award for Best Contemporary Fiction 2024 with her unpublished manuscript <em>Wooden Dolls</em>. Previously, it won the Portfolio Prize 2023 (MA, University of Lancaster). You can find her short stories and poetry in <em>Stand Magazine</em>, and <em>Dreamcatcher Magazine</em> (UK) and <em>The Apostrophe</em> and <em>Voice and Verse</em> (HK). Alongside working on her current novel and short stories, Holly also publishes <em>Beyond the Book Cover</em> on Substack, https://substack.com/@hollysykes1, which is featured in the Spring 2026 issue of <em>Mslexia</em>. Originally from the UK, she now lives in Hong Kong.
       </p>
 
     </aside>
@@ -3534,41 +3528,140 @@ Later, the DMV form came back to me—the bubble for <em>Other</em> faintly smea
 </section>
                 
  <section id="voices" class="section">
-            <div class="text-block">
-                <h2 class="section-title">Voices</h2>
-                <p class="intro-bold">Short reflections from writers capturing identity and daily life as they are lived.</p>
-                <p>Voices is a space for short reflections from writers across different places and lived experiences. We are building a collection of perspectives that capture identity, culture, and daily life as they are lived—not simplified, not translated, just told honestly.</p>
-                <div class="status-box">
-                    Voices is currently in development. We are actively collecting submissions from writers across different countries and communities, with the first features launching soon.
-                </div>
+<div class="text-block">
+<h2 class="section-title">Voices</h2>
+<p class="intro-bold">Short reflections from people capturing identity and daily life as they are lived.</p>
+<p>Voices is a space for perspectives from people across different places and lived experiences. We are building a collection of perspectives that capture identity, culture, and daily life as they are lived. These vulnerable and honest stories are not simplified nor are they translated.</p>
 
-                <div class="voice-guidelines">
-                    <h3>Submission Guidelines</h3>
+<details class="issue-dropdown">
+  <summary class="issue-dropdown-summary">
+    <span class="issue-dropdown-title">Issue I: Voices</span>
+    <span class="issue-dropdown-subhead">"What Does Home Mean to You?"</span>
+  </summary>
 
-                    <ul class="guidelines-list">
-                        <li><strong>Length:</strong> 100–300 words.</li>
-                        <li><strong>Format:</strong> Short reflection (paragraph form).</li>
-                        <li><strong>Credibility:</strong> Please include your name (or pseudonym) and location (city/country).</li>
-                    </ul>
+  <div class="voices-archive">
+  <p class="editor-note">A note on editing: these reflections are lightly formatted for the page but not edited for grammar, fluency, or phrasing. Each writer's voice is preserved as submitted.</p>
 
-                    <div class="active-prompts" style="margin-top: 20px; padding: 15px; background: #fdfdfd; border-left: 3px solid #000;">
-                        <p style="font-weight: 600; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem;">Current Prompts:</p>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 10px;"><strong>1.</strong> What does "home" mean to you?</li>
-                            <li><strong>2.</strong> Write about a moment in your life that changed you.</li>
-                        </ul>
-                    </div>
+  <details class="voice-card" name="voices-accordion">
+    <summary><span class="voice-summary-text"><span class="voice-name">Anar</span><span class="voice-location">Afghan living in Pakistan</span></span></summary>
+    <div class="voice-text">
+      <p>Home means somewhere I could feel free and I could go out without having to wear in a certain way to fit in the locals and avoid police.</p>
+      <p>Home means somewhere I could relax in my own house and when the door is knocked I could just simply open it instead of first running to rooftop and secretly looking down the roof top to see who is knocking and not feeling stressed out when there is a stranger.</p>
+      <p>And when the neighbors start acting annoying and unfair I could just simply argue back and speak up instead of staying silent and thinking what if they call the police on us if I argue with them?</p>
+      <p>Home means being able to feel safe happy nice and relaxed at the same time.</p>
+      <p>That's what home means to me.</p>
+    </div>
+  </details>
 
-                    <p class="voice-note" style="margin-top: 15px;">Submissions may be written in any language. If possible, please include an English translation (it does not need to be perfect).</p>
-                </div>
+  <details class="voice-card">
+    <summary><span class="voice-summary-text"><span class="voice-name">Anonymous</span><span class="voice-location">Indonesian immigrant living in Germany</span></span></summary>
+    <div class="voice-text">
+      <p>Home is where I am really relaxed and my nervous system is calm and where I enjoy being still without a guilt because maybe I grew up in culture to hustle and seems like doing nothing is a shame. Here in Germany, we have culture of 2F— faulende und Familie, which translate being lazy potatoes and family, that basically on weekend you spend most of time with your families and nothing wrong to do nothing. Even though Germany can be difficult to handle in term of language, however I found out the language is interesting & I enjoy speaking it. I am in the more privilege position which I have husband here, that got me more freedom to choose my career without thinking about paperwork about blue card visa for stay. I acknowledge that and I guess that's something important for me to finally have the place I call home in Germany.</p>
+    </div>
+  </details>
 
-                <div class="submission-instructions">
-                    <p>Email your submission to: <a href="mailto:liminallit@gmail.com">liminallit@gmail.com</a></p>
-                    <p><strong>Subject line:</strong> Voices Submission – [Your Name]</p>
-                </div>
-            </div>
-        </section>
+  <details class="voice-card">
+    <summary><span class="voice-summary-text"><span class="voice-name">Madison</span><span class="voice-location">American who previously lived in China and Taiwan</span></span></summary>
+    <div class="voice-text">
+      <p>When I graduated from university, I was convinced the best years of my life were behind me. The structure, friendships, and constant excitement of college had disappeared overnight, and I found myself slipping into a gray, murky depression feeling like life was all downhill from here.</p>
+      <p>A few months later, I moved to China.</p>
+      <p>This thrust me into constant stimulation: unfamiliar sights, sounds, smells like the infamous "stinky tofu," and relationships. At night I came home exhausted, hitting the pillow hard and processing a quirky interaction from the past few hours while wondering what adventure lay in store the next day. I wandered the streets of massive cities for hours on end, ate freshly cooked food from street vendors who greeted me with smiles and laughs, and hopped on trains to places I had never heard of a week earlier. Life felt vivid again.</p>
+      <p>What's stuck with me since my return to the U.S. isn't the novelty of exploring a new culture; it's the way I saw older people living. Retired folks strolled through parks with breaks to stretch or exercise, city corners hosted dancing aunties doing synchronized dances in front of boomboxes, and men gathered around chess boards watching matches of their friends. Aging in the U.S. seemed like moving further and further into the suburbs and strip malls, slowly losing touch with friends, and retreating piece by piece from life. In China, it looked like leaning into life; leaning into health, community, and hobbies.</p>
+      <p>China taught me that a meaningful life isn't something that peaks in youth and slowly declines. It's something that can remain active, curious, and connected at every age. I arrived believing my best years were behind me. I left invigorated, believing that the best was yet to come.</p>
+    </div>
+  </details>
 
+  <details class="voice-card">
+    <summary><span class="voice-summary-text"><span class="voice-name">Chris</span><span class="voice-location">American living in the Dominican Republic</span></span></summary>
+    <div class="voice-text">
+      <p>Deciding to move to Dominican Republic was surprisingly easy for my wife and me, despite neither of us being Dominican. We just knew that we were not living our best lives in New York City. Although there is a ton to do in NYC, much of it was out of reach for us. Incomes are higher, but so are expenses. I was not even aware of the myriad ways in which my life was grey. Friends, family, jobs, the subway, winter, leaves changing color, Fourth of July barbecues, the revolving door of entertainment, more—we left it all behind.</p>
+      <p>So what did I receive in return?</p>
+      <p>In NYC regular life was too taxing, but in DR I have enough spare time and energy to really write. I expect to finish my first novel this year.</p>
+      <p>Some of the people are becoming especially dear to me. Some are Americans and Canadians, some are local Dominicans, a few Germans, a few Aussies and Brits, Italian, Thai, Vietnamese, Ukrainian, Ecuadorian, Trinidadian, French, more... surprise! It's actually really diverse here, at least on the north shore of DR. And people support each other in a way that is just so beautiful. It's a wonderful representation of the best of humanity.</p>
+      <p>For many people the downsides represent too much to ask. For me, they represent changes I need to make, no different from learning Spanish and Dominican slang.</p>
+      <p>I have to brush my teeth with bottled water. I get to live 90 seconds from the ocean.</p>
+      <p>I have to avoid the sun during the middle of the day. I get to be a chef.</p>
+      <p>I have to avoid flushing toilet paper. I get to regularly see the most amazing sunsets with my beloved wife.</p>
+      <p>I had to say goodbye to my old life.</p>
+      <p>I get to have this new one.</p>
+    </div>
+  </details>
+
+  <details class="voice-card">
+    <summary><span class="voice-summary-text"><span class="voice-name">Marie</span><span class="voice-location">Nigerian</span></span></summary>
+    <div class="voice-text">
+      <p>For years I have moved between countries, sometimes continents - two or three times in a single year, or settling for three or four before the next place called. Long enough in that rhythm, you stop waiting to arrive somewhere and finally call it home. You learn instead that home is wherever you are standing.</p>
+      <p>It sounds like a loss, and at first it was. But I have come to hold it as something closer to freedom. The place I am in now gives me exactly what this stage of my life needs, and that feels like reason enough to belong to it: fully, without holding back, even knowing I will leave. Home stopped being a fixed address and became a decision I make wherever I land.</p>
+      <p>This doesn't erase the other kind of home. My roots, my family, the people I return to are home too, in the older and deeper sense - the one that waits whether I am there or not. I carry it with me. But I no longer ask the place I'm living in to be that. I ask it only to be itself, and I try to meet it on those terms.</p>
+      <p>Strangely, letting go of the search for a permanent home is what taught me to live in each temporary one more fully. When you stop measuring a place by how long you'll stay, you start to see what it actually offers you - now, while you are here.</p>
+    </div>
+  </details>
+
+  <details class="voice-card">
+    <summary><span class="voice-summary-text"><span class="voice-name">Anonymous</span><span class="voice-location">German living abroad</span></span></summary>
+    <div class="voice-text">
+      <p>For most of my twenties I thought home was a place I would eventually arrive at. The right city, the right apartment, the moment everything finally settled. So I went looking. The Philippines, Thailand, Dubai, Portugal, and soon Germany again. I have a habit of being the one who leaves.</p>
+      <p>Each new place started the same way. I learned the streets, found a café, built a small routine, and waited to feel like I belonged. The belonging stayed just out of reach. After enough cities I started to suspect I had been measuring the wrong thing. I kept asking where, when the question was always who.</p>
+      <p>My wife is from Myanmar. I am German. We have moved through five countries together, and she has been the one constant in all of them. She is the person who notices when I have forgotten to eat, who stays in the room when I go quiet. Home turned out to be that. Being seen by someone who chooses to keep looking.</p>
+      <p>These days I carry home with me. It lives in a shared rhythm, a kitchen at the end of the day, the quiet sense that wherever we land next, we land together. I have stopped waiting to arrive somewhere. I already did. She just happened to be standing there when I noticed.</p>
+    </div>
+  </details>
+
+  <details class="voice-card">
+    <summary><span class="voice-summary-text"><span class="voice-name">Daniel</span><span class="voice-location">American living in Oaxaca, Mexico (pseudonym)</span></span></summary>
+    <div class="voice-text">
+      <p>The last place I felt really at home was the house I grew up in near Detroit. I lived there from birth through high school. I moved out the day after I graduated high school and I've lived all over since then. New Mexico, Colorado, San Francisco, Paris France, Seattle, San Diego. Despite having owned 3 different homes, I never really felt settled and I seldom knew my neighbors. As new empty nesters, when we set out to downsize, skipped over the border and found we could rent a beach house inexpensively. We became border hoppers, visiting our friends in San Diego on occasion but living our day to day lives in Playa Rosarito, Mexico.</p>
+      <p>We decided we wanted to see more Mexico. Border towns don't usually offer the quintessential experience of a country so we decided to move every other year, renting furnished homes and experiencing life in different places until we felt "at home". We'd know we were home when we didn't feel like moving again.</p>
+      <p>We recently moved to Oaxaca de Juarez, a Spanish colonial city celebrating its 494th year. It is rich in culinary and cultural traditions and is very open to sharing them with visitors and new immigrants. Famous for its Dia de Muertos (day of the dead) celebration and a summer festival called Guelaguetza where regional cultures show off their traditional dances, costumes, and music.</p>
+      <p>Local organizers announce hikes, cooking classes, social events and language exchanges on social media groups. They freely mix immigrants, visitors, and locals. People are friendly and cooperative, and events are multilingual. Oaxacans are learning English while teaching us Norteños Spanish at language exchange events. I've also noticed how people show concern for one another and offer help freely, showing genuine concern. A real community that feels like home.</p>
+    </div>
+  </details>
+
+  <details class="voice-card">
+    <summary><span class="voice-summary-text"><span class="voice-name">Anonymous</span><span class="voice-location">Ukrainian living in Bucharest, Romania</span></span></summary>
+    <div class="voice-text">
+      <p>Sunlight through the green leaves of the apple orchard. Grandma who spends her days in the kitchen of a small apartment — not because she has to, but because it is her favorite place. Friends who come to play and share their stories and moments with me. A drawer full of books that I love to explore in any free moment.</p>
+      <p>All of this makes up the smell and emotion of early childhood — my original Home. A Kyiv home. Five generations of my family in that city.</p>
+      <p>I left at nineteen. Six countries since. Each time I packed, I carried less of the old place and more of something I couldn't name. I have never felt truly homesick. Not because I don't love where I come from, but because I learned early that I don't belong to one place, but rather to this whole world.</p>
+      <p>People sometimes ask where I'm from, and the honest answer never fits a single word. I am a Ukrainian in a Romanian city, post-Soviet in the EU, a mother in three languages, an insider nowhere and an observer everywhere.</p>
+      <p>But I know what I need.</p>
+      <p>A flower on the windowsill — a red pelargonium, the same kind my grandma grew. Friends and their voices at my fingertips. A book for the quiet moments.</p>
+      <p>Now it is a Bucharest windowsill. The light falls warmer here, longer. My two older children are already adults, building homes of their own somewhere in the world. My youngest is still shaping what the word home will mean for her.</p>
+      <p>I hope that flower on the window will be part of it.</p>
+    </div>
+  </details>
+</div>
+</details>
+
+<div class="submit-cta-box">
+  <h3 class="submit-cta-heading">Now Collecting: Voices — Issue II</h3>
+  <p>Issue I's voices are archived above. Thank you to everyone who shared their story. We're now reading submissions for Issue II.</p>
+  <a href="mailto:liminallit@gmail.com?subject=Voices%20Submission%20%E2%80%93%20%5BYour%20Name%5D" class="btn-black"><span class="btn-label">Submit to Issue II</span></a>
+</div>
+
+<div class="voice-guidelines" id="voices-guidelines">
+  <h3>Submission Guidelines</h3>
+  <ul class="guidelines-list">
+    <li><strong>Length:</strong> 100–300 words.</li>
+    <li><strong>Format:</strong> Short reflection (paragraph form).</li>
+    <li><strong>Credibility:</strong> Please include your name (or pseudonym) and location (city/country).</li>
+  </ul>
+  <div class="active-prompts">
+    <p class="prompts-label">Current Prompts:</p>
+    <ul class="prompts-list">
+      <li><strong>1.</strong> What does "home" mean to you?</li>
+      <li><strong>2.</strong> Write about a moment in your life that changed you.</li>
+    </ul>
+  </div>
+  <p class="voice-note">Submissions may be written in any language. If possible, please include an English translation (it does not need to be perfect).</p>
+</div>
+
+<div class="submission-instructions">
+  <p>Email your submission to: <a href="mailto:liminallit@gmail.com">liminallit@gmail.com</a></p>
+  <p><strong>Subject line:</strong> Voices Submission – [Your Name]</p>
+</div>
+</div>
+</section>
         <section id="editorial" class="section">
 <div class="accent-box">
 
@@ -3661,66 +3754,7 @@ Submit for Editorial Feedback
     </footer>
 
     <script>
-        // --- Click/tap-based dropdown menus (works on mobile, not just mouse hover) ---
-        function toggleDropdown(event, btn) {
-            event.preventDefault();
-            event.stopPropagation();
-            const dropdown = btn.closest('.dropdown');
-            const wasOpen = dropdown.classList.contains('open');
-
-            // close any other open dropdowns first
-            document.querySelectorAll('.dropdown.open').forEach(d => d.classList.remove('open'));
-
-            if (!wasOpen) {
-                dropdown.classList.add('open');
-            }
-        }
-
-        // Tapping/clicking anywhere else closes any open dropdown
-        document.addEventListener('click', function () {
-            document.querySelectorAll('.dropdown.open').forEach(d => d.classList.remove('open'));
-        });
-
-        // Close the dropdown after picking a link inside it
-        document.querySelectorAll('.dropdown-content a').forEach(link => {
-            link.addEventListener('click', function () {
-                document.querySelectorAll('.dropdown.open').forEach(d => d.classList.remove('open'));
-            });
-        });
-
-        // --- Mobile hamburger menu ---
-        function toggleMobileMenu() {
-            const navLinks = document.getElementById('navLinks');
-            const overlay = document.getElementById('navOverlay');
-            const hamburger = document.querySelector('.hamburger');
-            const isOpen = navLinks.classList.contains('open');
-
-            if (isOpen) {
-                closeMobileMenu();
-            } else {
-                navLinks.classList.add('open');
-                overlay.classList.add('open');
-                hamburger.classList.add('open');
-                document.body.classList.add('menu-open');
-            }
-        }
-
-        function closeMobileMenu() {
-            const navLinks = document.getElementById('navLinks');
-            const overlay = document.getElementById('navOverlay');
-            const hamburger = document.querySelector('.hamburger');
-
-            navLinks.classList.remove('open');
-            overlay.classList.remove('open');
-            hamburger.classList.remove('open');
-            document.body.classList.remove('menu-open');
-            document.querySelectorAll('.dropdown.open').forEach(d => d.classList.remove('open'));
-        }
-
         function showPage(id) {
-            // Always close the mobile menu first so it never covers the new section
-            closeMobileMenu();
-
             // Hide all sections (including hero)
             const allPages = document.querySelectorAll('.section');
             allPages.forEach(page => {
@@ -3740,6 +3774,17 @@ Submit for Editorial Feedback
                 behavior: 'instant'
             });
         }
+      document.querySelectorAll('.voice-card').forEach(card => {
+  card.addEventListener('toggle', () => {
+    if (card.open) {
+      document.querySelectorAll('.voice-card').forEach(other => {
+        if (other !== card) {
+          other.open = false;
+        }
+      });
+    }
+  });
+});
     </script>
 </body>
 </html>
