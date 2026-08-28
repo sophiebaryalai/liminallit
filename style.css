@@ -6,13 +6,13 @@
   --soft-blue: #F0F7FF;
   --transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
+ 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+ 
 body {
   background-color: var(--bg-cream);
   color: var(--navy);
@@ -21,7 +21,7 @@ body {
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
 }
-
+ 
 /* --- 1. PRETTY NAVIGATION --- */
 .nav-bar {
   background: rgba(255, 255, 255, 0.95);
@@ -32,18 +32,18 @@ body {
   z-index: 1000;
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
-
+ 
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
+ 
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 40px;
 }
-
+ 
 .nav-logo {
   text-decoration: none;
   color: var(--navy);
@@ -51,12 +51,12 @@ body {
   font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: 700;
-
+ 
   white-space: nowrap;
   flex-shrink: 0;
   margin-right: 70px;
 }
-
+ 
 .nav-links a {
   text-decoration: none;
   color: var(--navy);
@@ -67,9 +67,9 @@ body {
   letter-spacing: 1.5px;
   transition: var(--transition);
 }
-
+ 
 .nav-links a:hover { color: var(--gold); }
-
+ 
 /* --- 2. ELITE HERO (FIXED SPACING) --- */
 .hero {
   min-height: 90vh;
@@ -82,15 +82,15 @@ body {
   padding: 140px 40px 100px 40px;
   animation: fadeIn 1.2s ease;
 }
-
+ 
 .hero.active { display: flex; }
-
+ 
 h1 {
   font-family: 'Libre Baskerville', serif;
   font-size: clamp(3rem, 10vw, 5rem);
   margin-bottom: 25px; /* Space below title */
 }
-
+ 
 .tagline {
   font-size: 1.2rem;
   max-width: 600px;
@@ -98,7 +98,7 @@ h1 {
   margin: 0 auto 15px auto;
   color: #546E7A;
 }
-
+ 
 .issue-marker {
   font-size: 0.85rem;
   letter-spacing: 5px;
@@ -107,7 +107,7 @@ h1 {
   margin-bottom: 60px;
   display: block;
 }
-
+ 
 /* THE PRETTY SUBMIT BOX */
 .hero-cta-box {
   background: var(--white);
@@ -116,12 +116,12 @@ h1 {
   box-shadow: 0 20px 40px rgba(0,0,0,0.03);
   transition: var(--transition);
 }
-
+ 
 .hero-cta-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 30px 60px rgba(0,0,0,0.06);
 }
-
+ 
 /* --- 3. SPACED CONTENT SECTIONS --- */
 .section {
   display: none;
@@ -129,18 +129,18 @@ h1 {
   max-width: 850px;
   margin: 0 auto;
 }
-
+ 
 .section.active:not(.hero) {
   display: block;
   animation: fadeIn 0.8s ease;
 }
-
+ 
 /* FIX: This ensures paragraphs have room between them */
 p {
   margin-bottom: 30px;
   font-size: 1.05rem;
 }
-
+ 
 .section-title {
   font-family: 'Libre Baskerville', serif;
   font-size: 2.2rem;
@@ -149,7 +149,7 @@ p {
   padding-bottom: 15px;
   display: inline-block; /* THIS FIXES ALIGNMENT */
 }
-
+ 
 .section-title::after {
   content: '';
   position: absolute;
@@ -159,7 +159,7 @@ p {
   height: 2px;
   background: var(--gold);
 }
-
+ 
 /* --- 4. PRETTY CARDS & BUTTONS --- */
 .bordered-box {
   background: linear-gradient(
@@ -171,7 +171,7 @@ p {
   border: 1px solid rgba(0,0,0,0.05);
   box-shadow: 0 15px 35px rgba(0,0,0,0.02);
 }
-
+ 
 .accent-box {
   background: linear-gradient(
     to bottom,
@@ -179,7 +179,7 @@ p {
     rgba(220, 235, 255, 0.5)
   );
 }
-
+ 
 .btn-primary {
   background: var(--navy);
   padding: 20px 45px;
@@ -192,18 +192,18 @@ color: var(--white) !important;
   display: inline-block;
   transition: var(--transition);
 }
-
+ 
 .btn-primary:hover {
   background: #24405A; /* deepens toward navy instead of swapping to gold */
   transform: scale(1.02);
 }
-
+ 
 /* --- 5. ANIMATIONS --- */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
+ 
 /* --- 6. CLEAN FOOTER --- */
 .footer {
   background: var(--white);
@@ -211,7 +211,7 @@ color: var(--white) !important;
   text-align: center;
   border-top: 1px solid #f0f0f0;
 }
-
+ 
 /* This adds a gap between the "Theme" line and the "This issue is about..." paragraph */
 h3 {
   margin-bottom: 20px; /* Adjust this number to increase/decrease the gap */
@@ -220,12 +220,12 @@ h3 {
   font-size: 1.1rem;
   color: var(--navy);
 }
-
+ 
 /* Optional: If you want the "Theme" line to have space ABOVE it too */
 .bordered-box h3 {
   margin-top: 10px;
 }
-
+ 
 /* Adds space after the "Voices is in development" box */
 .status-box {
   margin-bottom: 50px; /* Adjust this to make the gap larger or smaller */
@@ -233,30 +233,30 @@ h3 {
   background-color: var(--soft-blue); /* Optional: gives it a subtle background to stand out */
   border-left: 4px solid var(--navy); /* Optional: makes it look like an official notice */
 }
-
+ 
 /* Ensures the "Submission Guidelines" header has space above it */
 .voice-guidelines h3 {
   margin-top: 20px;
   margin-bottom: 25px;
 }
-
+ 
 /* Adds a little space between the bullet points and the final note */
 .guidelines-list {
   margin-bottom: 20px;
   padding-left: 20px; /* Ensures bullets aren't cut off */
 }
-
+ 
 /* Fixes the gap between the Submit Button and the $600 prize text */
 .hero-cta-box .btn-primary {
   margin-bottom: 25px; /* Adjust this if you want a bigger or smaller gap */
 }
-
+ 
 /* Optional: Makes the prize text slightly more distinct */
 .prize-line {
   font-weight: 600;
   margin-bottom: 10px; /* Reduces the gap between this and the 'Open to all writers' line */
 }
-
+ 
 /* Ensures the last bit of text doesn't have a huge gap at the bottom of the white box */
 /* 1. KEEP INCLUSIVITY TEXT AS IS */
 .inclusivity-small {
@@ -264,7 +264,7 @@ h3 {
   font-size: 0.9rem;
   opacity: 0.8;
 }
-
+ 
 /* 2. ALL REGULAR LINKS GO GOLD (Email, Back to Top, etc.) */
 a,
 a:link,
@@ -272,7 +272,7 @@ a:visited {
   color: #B8860B !important;
   text-decoration: none !important;
 }
-
+ 
 /* 3. KEEP THE HEADERS AND NAV NAVY (Issue I: Between, Submit, etc.) */
 .hero-content h2 a,
 .hero-cta-box h3 a,
@@ -283,61 +283,61 @@ a:visited {
   text-decoration: none !important;
   font-weight: inherit;
 }
-
+ 
 /* 4. HOVER INTERACTION */
 a:hover {
   color: #DAA520 !important;
   text-decoration: underline !important;
 }
-
+ 
 /* Stops headers from underlining on hover */
 .hero-content h2 a:hover,
 .hero-cta-box h3 a:hover,
 .nav-links a:hover {
   text-decoration: none !important;
 }
-
+ 
 .hero-cta-box a {
   color: #FFFFFF !important;
 }
-
+ 
 .hero-cta-box a:hover {
   color: #F0F0F0 !important; /* slight soft hover, not harsh */
   text-decoration: none !important;
 }
-
+ 
 /* ISSUE TITLE (— Issue I: Between —) */
 .issue-marker {
   color: var(--navy) !important;
 }
-
+ 
 /* SUBMIT LINK TEXT */
 .hero-cta-box h2 a {
   color: var(--navy) !important;
 }
-
+ 
 /* keep it navy on hover too */
 .hero-cta-box h2 a:hover {
   color: var(--navy) !important;
   text-decoration: none !important;
 }
-
+ 
 /* ============================= */
 /* VISUAL UPGRADE (NO LAYOUT CHANGE) */
 /* ============================= */
-
+ 
 /* 1. SUBTLE PAPER TEXTURE */
 body {
   background-color: var(--bg-cream);
   background-image: radial-gradient(rgba(0,0,0,0.025) 1px, transparent 1px);
   background-size: 22px 22px;
 }
-
+ 
 /* 2. HERO EDITORIAL LINE */
 .hero {
   position: relative;
 }
-
+ 
 .hero::before {
   content: '';
   position: absolute;
@@ -348,18 +348,18 @@ body {
   background: rgba(26, 46, 64, 0.08);
   z-index: 0;
 }
-
+ 
 .hero > * {
   position: relative;
   z-index: 1;
 }
-
+ 
 /* 3. ELEVATED BOX DESIGN */
 .bordered-box, .accent-box {
   position: relative;
   overflow: hidden;
 }
-
+ 
 /* subtle top accent line */
 .bordered-box::before {
   content: '';
@@ -370,7 +370,7 @@ body {
   height: 2px;
   background: linear-gradient(to right, var(--navy), var(--gold));
 }
-
+ 
 /* subtle inner glow */
 .bordered-box::after {
   content: '';
@@ -379,7 +379,7 @@ body {
   box-shadow: inset 0 0 40px rgba(0,0,0,0.015);
   pointer-events: none;
 }
-
+ 
 /* 4. SOFT BLUE ACCENT SECTIONS */
 .accent-box {
   background: linear-gradient(
@@ -389,14 +389,14 @@ body {
   );
   border: none;
 }
-
+ 
 /* 5. BUTTON UPGRADE */
 .btn-primary {
   box-shadow: 0 10px 20px rgba(26, 46, 64, 0.15);
   position: relative;
   overflow: hidden;
 }
-
+ 
 .btn-primary::after {
   content: '';
   position: absolute;
@@ -412,21 +412,21 @@ body {
   );
   transition: 0.6s;
 }
-
+ 
 .btn-primary:hover::after {
   left: 100%;
 }
-
+ 
 /* 6. NAVBAR POLISH */
 .nav-bar {
   box-shadow: 0 5px 20px rgba(0,0,0,0.03);
 }
-
+ 
 /* subtle underline animation */
 .nav-links a {
   position: relative;
 }
-
+ 
 .nav-links a::after {
   content: '';
   position: absolute;
@@ -437,27 +437,27 @@ body {
   background: var(--gold);
   transition: 0.3s ease;
 }
-
+ 
 .nav-links a:hover::after {
   width: 100%;
 }
-
+ 
 /* 7. TYPOGRAPHY POLISH */
 h1, .section-title {
   letter-spacing: -0.5px;
 }
-
+ 
 p {
   line-height: 1.9;
 }
-
+ 
 /* 8. ISSUE MARKER (MAKE IT STAND OUT NICELY) */
 .issue-marker {
   color: var(--navy) !important;
   opacity: 0.8;
   position: relative;
 }
-
+ 
 /* subtle decorative lines beside it */
 .issue-marker::before,
 .issue-marker::after {
@@ -469,7 +469,7 @@ p {
   margin: 0 10px;
   vertical-align: middle;
 }
-
+ 
 /* 9. STATUS BOX UPGRADE */
 .status-box {
   background: linear-gradient(
@@ -480,12 +480,12 @@ p {
   border-left: 4px solid var(--navy);
   box-shadow: 0 10px 25px rgba(0,0,0,0.03);
 }
-
+ 
 /* 10. FOOTER POLISH */
 .footer {
   position: relative;
 }
-
+ 
 .footer::before {
   content: '';
   position: absolute;
@@ -496,51 +496,51 @@ p {
   height: 2px;
   background: var(--gold);
 }
-
+ 
 /* ============================= */
 /* FINAL MICRO-POLISH (ELITE) */
 /* ============================= */
-
+ 
 /* 1. SUPER SUBTLE PAGE FADE-IN */
 body {
   animation: pageFade 0.8s ease;
 }
-
+ 
 @keyframes pageFade {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-
+ 
 /* 2. TEXT SELECTION COLOR (small but VERY premium) */
 ::selection {
   background: rgba(184, 134, 11, 0.25);
   color: var(--navy);
 }
-
+ 
 /* 3. PARAGRAPH FADE-IN ON LOAD */
 .section p {
   opacity: 0;
   transform: translateY(8px);
   animation: textFade 0.8s ease forwards;
 }
-
+ 
 .section p:nth-of-type(1) { animation-delay: 0.1s; }
 .section p:nth-of-type(2) { animation-delay: 0.2s; }
 .section p:nth-of-type(3) { animation-delay: 0.3s; }
 .section p:nth-of-type(4) { animation-delay: 0.4s; }
-
+ 
 @keyframes textFade {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
+ 
 /* 4. SMOOTH SCROLL (feels modern instantly) */
 html {
   scroll-behavior: smooth;
 }
-
+ 
 /* 5. ELEGANT DIVIDER FOR SECTIONS */
 .section::after {
   content: '';
@@ -550,33 +550,33 @@ html {
   background: rgba(26, 46, 64, 0.15);
   margin: 80px auto 0;
 }
-
+ 
 /* 6. BUTTON PRESS EFFECT */
 .btn-primary:active {
   transform: scale(0.98);
 }
-
+ 
 /* 7. LINK TRANSITION SMOOTHNESS */
 a {
   transition: color 0.3s ease, opacity 0.3s ease;
 }
-
+ 
 /* 8. SLIGHT TEXT SHARPENING */
 body {
   text-rendering: optimizeLegibility;
 }
-
+ 
 /* 9. HERO TITLE SUBTLE GLOW (VERY LIGHT) */
 h1 {
   text-shadow: 0 1px 0 rgba(0,0,0,0.03);
 }
-
+ 
 /* 10. GOLD ACCENT LINE UNDER IMPORTANT TEXT */
 .prize-line {
   position: relative;
   display: inline-block;
 }
-
+ 
 .prize-line::after {
   content: '';
   display: block;
@@ -585,13 +585,13 @@ h1 {
   background: var(--navy);
   margin-top: 6px;
 }
-
+ 
 /* 11. HOVER LIFT FOR CARDS (feels interactive but subtle) */
 .bordered-box:hover {
   transform: translateY(-3px);
   transition: 0.4s ease;
 }
-
+ 
 /* 12. SOFT EDGE VIGNETTE (VERY subtle depth) */
 body::after {
   content: '';
@@ -604,20 +604,20 @@ body::after {
     rgba(0,0,0,0.02)
   );
 }
-
+ 
 .hero-cta-box {
   text-align: center; /* centers text */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+ 
 /* center the button box itself */
 .hero-cta-box .btn-primary {
   display: inline-block;
   margin: 0 auto 25px auto;
 }
-
+ 
 /* center prize + text block nicely */
 .hero-cta-box p,
 .hero-cta-box .prize-line {
@@ -625,20 +625,20 @@ body::after {
   margin-left: auto;
   margin-right: auto;
 }
-
+ 
 .section-title::after {
   width: 40px;
 }
-
+ 
 ::selection {
   background: rgba(240, 247, 255, 0.8);
   color: var(--navy);
 }
-
+ 
 /* ============================= */
 /* SOFT BLUE PAGE ENHANCEMENT (VISIBLE) */
 /* ============================= */
-
+ 
 /* HERO (make blue actually visible) */
 .hero {
   background: radial-gradient(
@@ -648,12 +648,12 @@ body::after {
     transparent 85%
   );
 }
-
+ 
 /* SECTION BASE */
 .section {
   position: relative;
 }
-
+ 
 /* visible blue wash */
 .section::before {
   content: '';
@@ -663,13 +663,13 @@ body::after {
   pointer-events: none;
   z-index: 0;
 }
-
+ 
 /* keep text above */
 .section > * {
   position: relative;
   z-index: 1;
 }
-
+ 
 /* PARAGRAPH ACCENT LINE (stronger so you SEE it) */
 .section p::before {
   content: '';
@@ -681,19 +681,19 @@ body::after {
   background: rgba(200, 225, 255, 1);
   border-radius: 2px;
 }
-
+ 
 /* HERO BOX GLOW */
 .hero-cta-box {
   box-shadow:
     0 20px 40px rgba(0,0,0,0.03),
     0 0 50px rgba(200, 225, 255, 0.9);
 }
-
+ 
 /* SECTION TITLE GLOW */
 .section-title {
   text-shadow: 0 0 12px rgba(200, 225, 255, 0.7);
 }
-
+ 
 /* ELITE HIGHLIGHT EFFECT */
 .section a {
   position: relative;
@@ -701,7 +701,7 @@ body::after {
   transition: color 0.3s ease;
   padding: 0 2px;
 }
-
+ 
 .section a::before {
   content: '';
   position: absolute;
@@ -713,11 +713,11 @@ body::after {
   z-index: -1;
   transition: height 0.3s ease;
 }
-
+ 
 .section a:hover::before {
   height: 100%;
 }
-
+ 
 /* This targets the "Submit to Issue I" box specifically */
 .hero-cta-box .btn-primary {
   background: var(--navy) !important; /* The deep blue you've used before */
@@ -730,7 +730,7 @@ body::after {
   text-decoration: none;
   transition: var(--transition);
 }
-
+ 
 /* Hover effect so it feels interactive */
 .hero-cta-box .btn-primary:hover {
   background: #24405A !important; /* deepens toward navy, stays blue */
@@ -738,7 +738,7 @@ body::after {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(26, 46, 64, 0.2);
 }
-
+ 
 /* Ensure the outer box stays white to create the "card" effect */
 .hero-cta-box {
   background: var(--soft-blue);
@@ -747,13 +747,13 @@ body::after {
   box-shadow: 0 20px 40px rgba(0,0,0,0.05);
   text-align: center;
 }
-
+ 
 /* Scoped selection color — click-dragging inside this box highlights navy, not gold */
 .hero-cta-box ::selection {
   background: rgba(26, 46, 64, 0.2);
   color: var(--navy);
 }
-
+ 
 /* FROSTED GLASS NAV */
 .nav-bar {
   background: rgba(253, 251, 247, 0.8) !important; /* Cream with transparency */
@@ -761,35 +761,35 @@ body::after {
   -webkit-backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(184, 134, 11, 0.1);
 }
-
+ 
 /* FLOATING HERO BOX */
 .hero-cta-box {
   transform: perspective(1000px) rotateX(2deg);
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
+ 
 .hero-cta-box:hover {
   transform: perspective(1000px) rotateX(0deg) translateY(-10px);
 }
-
+ 
 /* CUSTOM GOLD SCROLLBAR */
 ::-webkit-scrollbar {
   width: 8px;
 }
-
+ 
 ::-webkit-scrollbar-track {
   background: var(--bg-cream);
 }
-
+ 
 ::-webkit-scrollbar-thumb {
   background: var(--gold);
   border-radius: 10px;
 }
-
+ 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--navy);
 }
-
+ 
 /* MODERN IVY LOOK */
 h1, h2, .section-title {
   font-family: 'Libre Baskerville', serif !important;
@@ -798,14 +798,14 @@ h1, h2, .section-title {
   letter-spacing: -0.02em; /* Tighter spacing makes big fonts look high-end */
   font-weight: 700;
 }
-
+ 
 /* Keep the airy spacing ONLY for small labels/buttons */
 .nav-links a, .btn-primary, .issue-marker {
   letter-spacing: 0.15em !important;
   text-transform: uppercase;
   font-size: 0.75rem;
 }
-
+ 
 /* FOUNDER SIGNATURE STYLING */
 .signature {
   font-family: 'Libre Baskerville', serif;
@@ -817,12 +817,12 @@ h1, h2, .section-title {
   padding-top: 15px;
   width: fit-content;
 }
-
+ 
 /* PREMIUM SCROLLING */
 html {
   scroll-behavior: smooth;
 }
-
+ 
 /* SLEEK SCROLLBAR */
 ::-webkit-scrollbar {
   width: 6px;
@@ -834,34 +834,34 @@ html {
   background: var(--navy);
   border-radius: 10px;
 }
-
+ 
 /* SOFT CONTENT REVEAL */
 @keyframes eliteSlideUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
+ 
 .section.active {
   animation: eliteSlideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-
+ 
 /* CUSTOM TEXT SELECTION */
 ::selection {
   background: rgba(184, 134, 11, 0.2); /* Soft Gold Wash */
   color: var(--navy);
 }
-
+ 
 /* ELITE LIST STYLE */
 .voice-guidelines ul {
   list-style: none;
 }
-
+ 
 .voice-guidelines li {
   position: relative;
   padding-left: 25px;
   margin-bottom: 15px;
 }
-
+ 
 .voice-guidelines li::before {
   content: '—'; /* Elegant long dash */
   position: absolute;
@@ -869,7 +869,7 @@ html {
   color: var(--gold);
   font-weight: bold;
 }
-
+ 
 /* ELITE LINK ANIMATION */
 .section a:not(.btn-primary) {
   color: var(--gold);
@@ -877,7 +877,7 @@ html {
   position: relative;
   padding-bottom: 2px;
 }
-
+ 
 .section a:not(.btn-primary)::after {
   content: '';
   position: absolute;
@@ -888,18 +888,18 @@ html {
   background-color: var(--gold);
   transition: all 0.3s ease-in-out;
 }
-
+ 
 .section a:not(.btn-primary):hover::after {
   width: 100%;
   left: 0;
 }
-
+ 
 /* DROPDOWN NAVIGATION */
 .nav-links {
   display: flex;
   align-items: center;
 }
-
+ 
 .dropdown {
   position: relative;
   display: flex;
@@ -908,11 +908,11 @@ html {
   padding-bottom: 14px;
   margin-bottom: -14px;
 }
-
+ 
 .dropdown .dropbtn {
   margin-left: 0 !important;
 }
-
+ 
 .dropdown-content {
   display: none;
   position: absolute;
@@ -925,55 +925,55 @@ html {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   z-index: 1001;
 }
-
+ 
 .dropdown-content a {
   display: block;
   margin-left: 0 !important;
   padding: 12px 18px;
   white-space: nowrap;
 }
-
+ 
 .dropdown-content a::after {
   display: none;
 }
-
+ 
 .dropdown-content a:hover {
   background: rgba(240, 247, 255, 0.7);
 }
-
+ 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+ 
 /* CONTEST PAGE */
-
+ 
 .prize-display {
   margin: 40px 0 55px;
   padding: 35px;
   background: rgba(255, 255, 255, 0.7);
   border-left: 3px solid var(--gold);
 }
-
+ 
 .prize-display h4 {
   margin-bottom: 25px;
   font-family: 'Libre Baskerville', serif;
   font-size: 1.3rem;
 }
-
+ 
 .prize-display p:last-child {
   margin-bottom: 0;
 }
-
+ 
 /* ISSUE I PAGE */
-
+ 
 .issue-page {
   text-align: center;
 }
-
+ 
 .issue-header {
   margin-bottom: 75px;
 }
-
+ 
 .issue-number {
   margin-bottom: 5px;
   font-size: 0.8rem;
@@ -981,20 +981,20 @@ html {
   letter-spacing: 4px;
   color: var(--gold);
 }
-
+ 
 .issue-title {
   margin-bottom: 15px;
   font-family: 'Libre Baskerville', serif;
   font-size: clamp(2.8rem, 7vw, 4.5rem);
   color: #0F2638;
 }
-
+ 
 .issue-theme {
   margin-bottom: 8px;
   font-style: italic;
   color: #1E3A50;
 }
-
+ 
 .issue-date {
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -1002,7 +1002,7 @@ html {
   color: #1E3A50;
   opacity: 1;
 }
-
+ 
 .editors-note-preview {
   margin-bottom: 90px;
 }
@@ -1011,7 +1011,7 @@ html {
   margin: 0 auto 45px;
   text-align: left;
 }
-
+ 
 .editor-note-text p {
   margin-bottom: 24px;
   font-family: 'Libre Baskerville', serif;
@@ -1019,11 +1019,11 @@ html {
   line-height: 2;
   color: var(--navy);
 }
-
+ 
 .editor-note-text p:last-child {
   margin-bottom: 0;
 }
-
+ 
 .editors-note-preview h3,
 .issue-contents h3 {
   margin-bottom: 28px;
@@ -1032,28 +1032,28 @@ html {
   font-style: italic;
   color: #0F2638;
 }
-
+ 
 .editor-name {
   margin-bottom: 5px;
   font-weight: 600;
 }
-
+ 
 .editor-role {
   margin-bottom: 30px;
   font-style: italic;
 }
-
+ 
 .issue-divider {
   display: block;
   font-family: 'Libre Baskerville', serif;
   font-size: 1.1rem;
 }
-
+ 
 .issue-contents h3 {
   margin-top: 80px;
   text-transform: uppercase;
 }
-
+ 
 .contributor-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1062,40 +1062,40 @@ html {
   max-width: 650px;
   margin: 0 auto;
 }
-
+ 
 .contributor-grid a {
   font-size: 1.05rem;
 }
-
+ 
 .contest-history-note {
   margin-top: 100px;
   font-size: 0.85rem;
   font-style: italic;
   opacity: 0.75;
 }
-
+ 
 /* MOBILE */
-
+ 
 @media (max-width: 950px) {
   .nav-container {
     flex-direction: column;
     gap: 20px;
   }
-
+ 
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 14px;
   }
 }
-
+ 
 @media (max-width: 650px) {
   .contributor-grid {
     grid-template-columns: 1fr;
     row-gap: 18px;
   }
 }
-
+ 
 .issue-marker {
   display: flex !important;
   align-items: center;
@@ -1109,7 +1109,7 @@ html {
   text-transform: uppercase;
   text-align: center;
 }
-
+ 
 .issue-marker::before,
 .issue-marker::after {
   content: "" !important;
@@ -1125,7 +1125,7 @@ html {
   border-radius: 0 !important;
   flex: 0 0 45px !important;
 }
-
+ 
 .issue-marker-link {
   display: block;
   width: fit-content;
@@ -1137,28 +1137,28 @@ html {
   text-decoration: none;
   transition: var(--transition);
 }
-
+ 
 .issue-marker-link:hover {
   color: var(--navy) !important;
   text-decoration: none !important;
 }
-
+ 
 /* ================================================== */
 /* INDIVIDUAL CONTRIBUTOR PAGES */
 /* ================================================== */
-
+ 
 .contributor-page {
   max-width: 960px;
   padding-top: 95px;
   padding-bottom: 130px;
 }
-
+ 
 /* Prevent the site's decorative paragraph lines
    from appearing beside poem bylines and bios */
 .contributor-page p::before {
   display: none !important;
 }
-
+ 
 /* Prevent paragraph animations from making the
    bylines or biography briefly invisible */
 .contributor-page p {
@@ -1166,26 +1166,26 @@ html {
   transform: none;
   animation: none;
 }
-
+ 
 /* Remove the automatic section divider because
    this page already has its own visual structure */
 .contributor-page::after {
   display: none;
 }
-
+ 
 /* TOP AND BOTTOM NAVIGATION */
-
+ 
 .contributor-top-navigation {
   max-width: 720px;
   margin: 0 auto 85px;
 }
-
+ 
 .contributor-bottom-navigation {
   max-width: 720px;
   margin: 70px auto 0;
   text-align: center;
 }
-
+ 
 .back-to-issue {
   display: inline-block;
   font-size: 0.72rem;
@@ -1193,19 +1193,19 @@ html {
   letter-spacing: 1.6px;
   text-transform: uppercase;
 }
-
+ 
 /* EACH POEM */
-
+ 
 .poem-entry {
   max-width: 720px;
   margin: 0 auto;
 }
-
+ 
 .poem-header {
   margin-bottom: 55px;
   text-align: center;
 }
-
+ 
 .poem-title {
   margin: 0 auto 15px;
   font-family: 'Libre Baskerville', serif;
@@ -1215,7 +1215,7 @@ html {
   letter-spacing: -0.02em;
   color: #0F2638;
 }
-
+ 
 .poem-byline {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -1224,9 +1224,9 @@ html {
   letter-spacing: 1.2px;
   color: #1E3A50;
 }
-
+ 
 /* POEM BODY */
-
+ 
 .poem-text {
   max-width: 680px;
   margin: 0 auto;
@@ -1237,35 +1237,35 @@ html {
   color: #1E3A50;
   text-align: left;
 }
-
+ 
 .poem-stanza {
   margin-bottom: 31px;
 }
-
+ 
 .poem-stanza:last-child {
   margin-bottom: 0;
 }
-
+ 
 /* The second poem uses prose-style paragraphs,
    so its width is slightly more compact */
 .prose-poem {
   max-width: 650px;
 }
-
+ 
 .prose-poem .poem-stanza {
   margin-bottom: 27px;
 }
-
+ 
 .poem-ending {
   margin-left: 0;
 }
-
+ 
 .closing-tercet {
   margin-top: 42px;
 }
-
+ 
 /* DIVIDER BETWEEN WORKS */
-
+ 
 .poem-divider {
   margin: 105px auto;
   font-family: 'Libre Baskerville', serif;
@@ -1273,9 +1273,9 @@ html {
   color: var(--gold);
   text-align: center;
 }
-
+ 
 /* AUTHOR BIO */
-
+ 
 .contributor-bio {
   max-width: 720px;
   margin: 120px auto 0;
@@ -1285,7 +1285,7 @@ html {
   border-bottom: 1px solid rgba(184, 134, 11, 0.2);
   box-shadow: 0 18px 45px rgba(26, 46, 64, 0.04);
 }
-
+ 
 .bio-label {
   margin-bottom: 22px;
   font-family: 'Libre Baskerville', serif;
@@ -1293,41 +1293,41 @@ html {
   font-weight: 700;
   color: var(--navy);
 }
-
+ 
 .contributor-bio p {
   font-size: 0.94rem;
   line-height: 1.9;
   color: #1E3A50;
 }
-
+ 
 .contributor-bio p:last-child {
   margin-bottom: 0;
 }
-
+ 
 .author-social {
   margin-top: 24px;
 }
-
+ 
 /* MOBILE */
-
+ 
 @media (max-width: 650px) {
-
+ 
   .contributor-page {
     padding: 75px 22px 100px;
   }
-
+ 
   .contributor-top-navigation {
     margin-bottom: 65px;
   }
-
+ 
   .poem-header {
     margin-bottom: 42px;
   }
-
+ 
   .poem-title {
     font-size: 1.85rem;
   }
-
+ 
   .poem-text {
     width: 100%;
     font-size: 0.96rem;
@@ -1335,129 +1335,129 @@ html {
     overflow-wrap: normal;
     word-break: normal;
   }
-
+ 
   .poem-stanza {
     margin-bottom: 27px;
   }
-
+ 
   .poem-divider {
     margin: 80px auto;
   }
-
+ 
   .contributor-bio {
     margin-top: 90px;
     padding: 34px 27px;
   }
-
+ 
 }
-
+ 
 /* Amaltas prose poem */
-
+ 
 .amaltas-poem p {
   margin: 0;
 }
-
+ 
 .amaltas-poem p + p {
   margin-top: 0.15em;
 }
-
+ 
 .amaltas-ending {
   margin-top: 0.15em;
 }
-
+ 
 /* Lois Wi — After prayer at 8:12PM EST */
-
+ 
 .prayer-poem {
   position: relative;
 }
-
+ 
 .prayer-opening {
   position: relative;
   margin-bottom: 5rem;
 }
-
+ 
 .prayer-opening-left {
   max-width: 100%;
 }
-
+ 
 .prayer-split-line {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-
+ 
 .prayer-judgment {
   margin-top: 0.35rem;
   padding-right: 1rem;
   text-align: right;
   line-height: 1.55;
 }
-
+ 
 .prayer-main-stanza {
   margin-bottom: 2.6rem;
 }
-
+ 
 .prayer-indented-section {
   margin-left: 9rem;
   margin-bottom: 9rem;
   line-height: inherit;
 }
-
+ 
 .prayer-inner-lines {
   margin-top: 0.2rem;
   margin-left: 9rem;
 }
-
+ 
 .prayer-footnote {
   width: 18rem;
   font-size: 0.9em;
   line-height: 1.6;
 }
-
+ 
 .prayer-footnote-line {
   width: 100%;
   border-top: 1px solid currentColor;
   margin-bottom: 0.35rem;
 }
-
+ 
 .prayer-footnote > div:not(.prayer-footnote-line) {
   margin-bottom: 0.8rem;
 }
-
+ 
 @media (max-width: 700px) {
   .prayer-split-line {
     gap: 2rem;
   }
-
+ 
   .prayer-indented-section {
     margin-left: 2rem;
     margin-bottom: 6rem;
   }
-
+ 
   .prayer-inner-lines {
     margin-left: 3rem;
   }
-
+ 
   .prayer-footnote {
     width: 16rem;
   }
 }
-
+ 
 /* ======================================== */
 /* Z. T. CORLEY — POEM FORMATTING */
 /* ======================================== */
-
+ 
 /* American :: African and American :: Black */
-
+ 
 .american-question-poem {
   width: min(100%, 42rem);
 }
-
+ 
 .american-question-line {
   margin-bottom: 1.35rem;
   white-space: nowrap;
 }
-
+ 
 .american-split-two {
   display: grid;
   grid-template-columns: max-content max-content;
@@ -1465,7 +1465,7 @@ html {
   justify-content: start;
   align-items: baseline;
 }
-
+ 
 .american-split-three {
   display: grid;
   grid-template-columns: max-content max-content max-content;
@@ -1473,37 +1473,37 @@ html {
   justify-content: start;
   align-items: baseline;
 }
-
+ 
 .american-final-split {
   column-gap: 4rem;
 }
-
+ 
 /* Poem After Deana Lawson's Sons of Cush, 2016 */
-
+ 
 .sons-of-cush {
   width: min(100%, 37rem);
 }
-
+ 
 .sons-number {
   margin-bottom: 0.45rem;
 }
-
+ 
 .sons-section-gap {
   margin-top: 1.55rem;
 }
-
+ 
 .sons-line {
   margin-bottom: 1.15rem;
 }
-
+ 
 .sons-stanza-gap {
   margin-top: 1.65rem;
 }
-
+ 
 .sons-indent-one {
   margin-left: 2.15rem;
 }
-
+ 
 .sons-indent-two,
 .sons-indent-three,
 .sons-indent-four,
@@ -1512,36 +1512,36 @@ html {
 .sons-indent-seven {
   display: inline-block;
 }
-
+ 
 .sons-indent-two {
   margin-left: 2.2rem;
 }
-
+ 
 .sons-indent-three {
   margin-left: 5rem;
 }
-
+ 
 .sons-indent-four {
   margin-left: 3.6rem;
 }
-
+ 
 .sons-indent-five {
   margin-left: 3.5rem;
 }
-
+ 
 .sons-indent-six {
   margin-left: 4.2rem;
 }
-
+ 
 .sons-indent-seven {
   margin-left: 5.2rem;
 }
-
+ 
 @media (max-width: 700px) {
   .american-question-line {
     white-space: normal;
   }
-
+ 
   .american-split-two,
   .american-split-three {
     display: flex;
@@ -1549,7 +1549,7 @@ html {
     column-gap: 1.5rem;
     row-gap: 0.25rem;
   }
-
+ 
   .sons-indent-one,
   .sons-indent-two,
   .sons-indent-three,
@@ -1560,9 +1560,9 @@ html {
     margin-left: 1.25rem;
   }
 }
-
+ 
 /* Sara Surani poem formatting */
-
+ 
 .arabic-text {
   display: inline-block;
   margin-left: 0.25rem;
@@ -1571,36 +1571,36 @@ html {
   direction: rtl;
   unicode-bidi: isolate;
 }
-
+ 
 .poem-title-lowercase {
   text-transform: none;
 }
-
+ 
 /* Fiction contributor pages */
-
+ 
 .fiction-entry {
   width: min(100%, 46rem);
   margin: 0 auto;
 }
-
+ 
 .fiction-text {
   font-family: inherit;
   font-size: 1.05rem;
   line-height: 1.85;
   color: #1E3A50;
 }
-
+ 
 .fiction-text p {
   margin: 0 0 1.25rem;
   text-indent: 2rem;
 }
-
+ 
 @media (max-width: 700px) {
   .fiction-text {
     font-size: 1rem;
     line-height: 1.75;
   }
-
+ 
   .fiction-text p {
     text-indent: 1.25rem;
   }
@@ -1610,7 +1610,7 @@ html {
   background: var(--navy) !important;
   color: var(--white) !important;
 }
-
+ 
 #submissions .btn-primary:hover {
   background: #24405A !important;
   color: var(--white) !important;
@@ -1618,7 +1618,7 @@ html {
 /* ========================================
    ISSUE II SUBMISSION FAQ
 ======================================== */
-
+ 
 .submission-faq {
   width: 100%;
   max-width: 820px;
@@ -1627,13 +1627,13 @@ html {
   border-top: 1px solid rgba(26, 46, 64, 0.18);
   color: var(--navy);
 }
-
+ 
 .faq-heading {
   max-width: 650px;
   margin: 0 auto 38px;
   text-align: center;
 }
-
+ 
 .faq-eyebrow {
   margin: 0 0 12px;
   color: var(--gold);
@@ -1644,7 +1644,7 @@ html {
   line-height: 1.4;
   text-transform: uppercase;
 }
-
+ 
 .faq-heading h3 {
   margin: 0 0 14px;
   color: var(--navy);
@@ -1654,24 +1654,24 @@ html {
   letter-spacing: -0.02em;
   line-height: 1.25;
 }
-
+ 
 .faq-heading > p:not(.faq-eyebrow) {
   margin: 0 auto;
   color: rgba(26, 46, 64, 0.76);
   font-size: 0.95rem;
   line-height: 1.8;
 }
-
+ 
 .faq-list {
   border-top: 1px solid rgba(26, 46, 64, 0.16);
 }
-
+ 
 .faq-item {
   margin: 0;
   border-bottom: 1px solid rgba(26, 46, 64, 0.16);
   background: transparent;
 }
-
+ 
 .faq-item summary {
   position: relative;
   display: block;
@@ -1687,11 +1687,11 @@ html {
     color 0.25s ease,
     padding-left 0.25s ease;
 }
-
+ 
 .faq-item summary::-webkit-details-marker {
   display: none;
 }
-
+ 
 .faq-item summary::after {
   content: "+";
   position: absolute;
@@ -1705,48 +1705,48 @@ html {
   transform: translateY(-50%);
   transition: transform 0.25s ease;
 }
-
+ 
 .faq-item summary:hover {
   color: var(--gold);
   padding-left: 6px;
 }
-
+ 
 .faq-item[open] summary {
   color: var(--gold);
 }
-
+ 
 .faq-item[open] summary::after {
   transform: translateY(-50%) rotate(45deg);
 }
-
+ 
 .faq-answer {
   max-width: 730px;
   padding: 0 48px 24px 0;
   animation: faqReveal 0.3s ease;
 }
-
+ 
 .faq-answer p {
   margin: 0 0 12px;
   color: rgba(26, 46, 64, 0.82);
   font-size: 0.94rem;
   line-height: 1.85;
 }
-
+ 
 .faq-answer p:last-child {
   margin-bottom: 0;
 }
-
+ 
 .faq-answer em {
   font-family: 'Libre Baskerville', serif;
 }
-
+ 
 .faq-contact {
   margin-top: 46px;
   padding: 30px 34px;
   border-left: 3px solid var(--gold);
   background: rgba(255, 255, 255, 0.45);
 }
-
+ 
 .faq-contact h4 {
   margin: 0 0 8px;
   color: var(--navy);
@@ -1754,61 +1754,61 @@ html {
   font-size: 1.05rem;
   font-weight: 700;
 }
-
+ 
 .faq-contact p {
   margin: 0;
   color: rgba(26, 46, 64, 0.8);
   font-size: 0.92rem;
   line-height: 1.7;
 }
-
+ 
 .faq-contact a {
   color: var(--gold);
   font-weight: 600;
   text-decoration: none;
 }
-
+ 
 .faq-contact a:hover {
   color: var(--navy);
 }
-
+ 
 @keyframes faqReveal {
   from {
     opacity: 0;
     transform: translateY(-5px);
   }
-
+ 
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
+ 
 /* FAQ MOBILE */
 @media (max-width: 700px) {
   .submission-faq {
     margin-top: 60px;
     padding-top: 45px;
   }
-
+ 
   .faq-heading {
     margin-bottom: 28px;
   }
-
+ 
   .faq-item summary {
     padding: 20px 38px 20px 0;
     font-size: 0.95rem;
   }
-
+ 
   .faq-answer {
     padding: 0 28px 21px 0;
   }
-
+ 
   .faq-answer p {
     font-size: 0.9rem;
     line-height: 1.75;
   }
-
+ 
   .faq-contact {
     margin-top: 36px;
     padding: 24px;
@@ -1817,17 +1817,17 @@ html {
 /* ========================================
    ĀMALTĀS STANZA SPACING FIX
 ======================================== */
-
+ 
 .poem-text.prose-poem.amaltas-poem p {
   display: block !important;
   margin-top: 0 !important;
   margin-bottom: 1.35em !important;
 }
-
+ 
 .poem-text.prose-poem.amaltas-poem p:last-child {
   margin-bottom: 0 !important;
 }
-
+ 
 .poem-text.prose-poem.amaltas-poem .amaltas-ending {
   margin-top: 1.75em !important;
   margin-bottom: 0 !important;
@@ -1859,7 +1859,7 @@ html {
   margin-bottom: 30px;
   max-width: 600px;
 }
-
+ 
 .voice-card {
   background: var(--white);
   border: 1px solid rgba(0,0,0,0.06);
@@ -1921,7 +1921,7 @@ html {
 }
 .voice-text p:first-child { margin-top: 25px; }
 .voice-text p:last-child { margin-bottom: 0; }
-
+ 
 .status-heading {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
@@ -1930,7 +1930,7 @@ html {
   display: block;
   margin-bottom: 10px;
 }
-
+ 
 .prompts-label {
   font-weight: 600;
   margin-bottom: 10px;
