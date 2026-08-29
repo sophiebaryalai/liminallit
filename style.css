@@ -2060,6 +2060,10 @@ html {
 }
 
 @media (max-width: 800px) {
+  .nav-links .dropdown-content a {
+    white-space: normal;
+    padding: 10px 0;
+  }
   .hamburger-btn {
     display: flex;
   }
@@ -2090,6 +2094,8 @@ html {
   }
   .nav-links .dropdown {
     width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .nav-links .dropdown-content {
     position: static;
@@ -2099,5 +2105,8 @@ html {
     opacity: 1;
     visibility: visible;
     background: transparent;
+    min-width: 0;
+    width: 100%;
+    border: none;
   }
 }
