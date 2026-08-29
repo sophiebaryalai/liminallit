@@ -3752,6 +3752,14 @@ Submit for Editorial Feedback
     </footer>
 
     <script>
+        function toggleMobileNav() {
+            document.getElementById('navLinks').classList.toggle('mobile-open');
+            document.querySelector('.hamburger-btn').classList.toggle('active');
+        }
+        function closeMobileNav() {
+            document.getElementById('navLinks').classList.remove('mobile-open');
+            document.querySelector('.hamburger-btn').classList.remove('active');
+        }
         function showPage(id) {
             // Hide all sections (including hero)
             const allPages = document.querySelectorAll('.section');
