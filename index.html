@@ -25,7 +25,7 @@
 <a href="javascript:void(0)" onclick="showPage('hero'); closeMobileNav()">Home</a>
 <a href="javascript:void(0)" onclick="showPage('about'); closeMobileNav()">Mission</a>
 <div class="dropdown">
-<a href="javascript:void(0)" class="dropbtn">Issues ▾</a>
+<a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this)">Issues ▾</a>
 <div class="dropdown-content">
 <a href="javascript:void(0)" onclick="showPage('issue1'); closeMobileNav()">
 Issue I: Between
@@ -34,7 +34,7 @@ Issue I: Between
 </div>
 <a href="javascript:void(0)" onclick="showPage('submit'); closeMobileNav()">Submit</a>
 <div class="dropdown">
-<a href="javascript:void(0)" class="dropbtn">Contests ▾</a>
+<a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this)">Contests ▾</a>
 <div class="dropdown-content">
 <a href="javascript:void(0)" onclick="showPage('submissions'); closeMobileNav()">
 Issue I Contest: Between
@@ -3752,6 +3752,9 @@ Submit for Editorial Feedback
     </footer>
 
     <script>
+        function toggleDropdown(btn) {
+            btn.closest('.dropdown').classList.toggle('dropdown-open');
+        }
         function toggleMobileNav() {
             document.getElementById('navLinks').classList.toggle('mobile-open');
             document.querySelector('.hamburger-btn').classList.toggle('active');
