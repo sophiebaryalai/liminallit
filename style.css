@@ -2117,3 +2117,9 @@ html {
     display: block;
   }
 }
+/* Daniel Gordon — center scene break markers */
+#daniel-gordon .fiction-scene-break {
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0;
+}
