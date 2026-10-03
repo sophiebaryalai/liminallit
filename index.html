@@ -25,12 +25,23 @@
 <a href="javascript:void(0)" onclick="showPage('hero'); closeMobileNav()">Home</a>
 <a href="javascript:void(0)" onclick="showPage('about'); closeMobileNav()">Mission</a>
 <div class="dropdown">
-<a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this)">Issues ▾</a>
-<div class="dropdown-content">
-<a href="javascript:void(0)" onclick="showPage('issue1'); closeMobileNav()">
-Issue I: Between
-</a>
-</div>
+  <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown(this)">
+    Issues ▾
+  </a>
+
+  <div class="dropdown-content">
+
+    <a href="javascript:void(0)"
+       onclick="showPage('issue1'); closeMobileNav()">
+      Issue I: Between
+    </a>
+
+    <a href="javascript:void(0)"
+       onclick="showPage('issue2'); closeMobileNav()">
+      Issue II: After
+    </a>
+
+  </div>
 </div>
 <a href="javascript:void(0)" onclick="showPage('submit'); closeMobileNav()">Submit</a>
 <div class="dropdown">
@@ -68,24 +79,26 @@ Contact
    class="issue-marker-link">
    Read the Issue →
 </a>
-            
-           <div class="hero-cta-box">
-  <a
-href="https://docs.google.com/forms/d/e/1FAIpQLSdQjPhdL-R4a2KMlqWsf7Fk9FLV4bjkCf9uDbbRtTdTXmj8eg/viewform?usp=dialog"
-target="_blank"
-rel="noopener noreferrer"
-class="btn-primary">
-Submit to Issue II: After
-</a>
+     <div class="hero-cta-box issue-review-card">
 
-  <p class="prize-line">
-    Every published contributor receives a $100 honorarium
+  <p class="review-eyebrow">ISSUE II: AFTER</p>
+
+  <h2 class="review-title">Submissions Closed</h2>
+
+  <p class="review-status">
+    Issue II is currently under editorial review.
   </p>
 
-  <p class="inclusivity-small">
-    Open to all writers exploring what remains after moments that shape us.
-    Liminal Lit is free to submit!
+  <div class="review-divider"></div>
+
+  <p class="review-thanks">
+    Thank you to everyone who entrusted us with your work.
   </p>
+
+  <p class="issue-three-teaser">
+    Issue III submissions are opening soon.
+  </p>
+
 </div>
         </div>
     </header>
@@ -102,74 +115,68 @@ Submit to Issue II: After
                 <p>Liminal Lit exists to create a space for writing that resists simplification. We believe writers should not need to reduce their identities to be understood.</p>
             </div>
         </section>
-     <section id="submit" class="section">
+   <section id="submit" class="section">
   <div class="bordered-box">
 
     <h2 class="section-title">
       <i class="fa-solid fa-star"></i>
-      Issue II: <em>After</em>
+      Issue III: <em>Return</em>
     </h2>
 
     <p>
-      <strong>Theme:</strong> After
+      <strong>Theme:</strong> Return
     </p>
 
     <p>
-      <em>After</em> explores what remains, what changes, and what begins
-      following moments that shape us. We invite poetry, short fiction, and
-      creative nonfiction that interprets this theme in original and
-      compelling ways.
+      <em>Return</em> explores what comes back and what it means to encounter
+      it again. We invite work that considers return in all its forms, whether
+      chosen or unwanted, joyful or painful, literal or imagined.
     </p>
 
     <p>
-      We encourage broad interpretation, whether your work reflects on memory,
-      transformation, grief, joy, migration, family, identity, love, language,
-      resilience, or entirely unexpected places the theme may lead.
+      What changes when we revisit something we thought we had left behind—and
+      what happens when neither we nor what we return to is quite the same?
     </p>
 
     <p>
       <strong>Contributor Payment</strong><br>
-      Every published contributor receives a $100 honorarium.
+      Every published contributor will receive a $100 honorarium.
     </p>
 
     <p>
       Poetry | Short Fiction | Creative Nonfiction
     </p>
 
-    <p>
-      <strong>Deadline:</strong> September 15th, 2026
-    </p>
+    <div class="issue3-coming-soon">
 
-    <p>
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdQjPhdL-R4a2KMlqWsf7Fk9FLV4bjkCf9uDbbRtTdTXmj8eg/viewform?usp=dialog"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Submit to Issue II
-      </a>
-    </p>
+      <p class="issue3-coming-label">
+        Submissions Opening Soon
+      </p>
 
-    <p>
-      Submissions are free. If you encounter any issues with the submission
-      form, please email
-      <a href="mailto:liminallit@gmail.com">liminallit@gmail.com</a>.
-    </p>
+      <p>
+        Submissions for Issue III: <em>Return</em> will open in the coming
+        weeks. The submission form, deadline, and full guidelines will be
+        available here when the reading period begins.
+      </p>
+
+    </div>
+
     <!-- ======================================== -->
-<!-- ISSUE II SUBMISSION FAQ -->
-<!-- ======================================== -->
+    <!-- ISSUE III SUBMISSION FAQ -->
+    <!-- ======================================== -->
 
-<div class="submission-faq">
-  <div class="faq-heading">
-    <p class="faq-eyebrow">Submission Information</p>
-    <h3>Frequently Asked Questions</h3>
-    <p>
-      Answers to common questions about submitting and publishing with
-      Liminal Lit.
-    </p>
-  </div>
+    <div class="submission-faq">
 
-  <div class="faq-list">
+      <div class="faq-heading">
+        <p class="faq-eyebrow">Submission Information</p>
+        <h3>Frequently Asked Questions</h3>
+        <p>
+          Answers to common questions about submitting and publishing with
+          Liminal Lit.
+        </p>
+      </div>
+
+      <div class="faq-list">
 
     <details class="faq-item">
       <summary>Do you accept AI-generated work?</summary>
@@ -524,6 +531,487 @@ Submit to Issue II: After
 
   </div>
 </section>
+ <!-- ======================================== -->
+<!-- ISSUE I CONTRIBUTORS -->
+<!-- ======================================== -->
+
+<div id="issue1-contributors" class="issue-contributors">
+
+  <div class="contributors-heading">
+    <p class="contributors-eyebrow">Issue I · Between</p>
+    <h2>Contributors</h2>
+    <p class="contributors-intro">
+      Meet the writers whose work appears in our inaugural issue.
+    </p>
+  </div>
+
+
+  <div class="contributors-list">
+   
+    <div class="contributor-genre">Poetry</div>
+
+    <!-- HANNAN KHAN -->
+    <article class="contributor-note">
+      <h3>
+        <a href="javascript:void(0)" onclick="showPage('hannan-khan')">
+          Hannan Khan
+        </a>
+      </h3>
+
+      <p class="contributor-work">
+        <em>Nobody Carries One Name Across</em> ·
+        <em>Āmaltās After the Surveyors</em> ·
+        <em>Tongues Tangled in Transit</em>
+      </p>
+
+      <p>
+        Hannan Khan — a nefelibata, poet, fiction writer, editor, and scholar
+        of literature &amp; linguistics from Pakistan. He combs through moments
+        of love, death, delirium, identity, and relational complexities. He is
+        the winner of the Native Voices Award 2025 for his poetry collection
+        <em>Isn’t Cooked Is Cursed</em>, and a finalist for the Rhysling Award
+        2026. He is longlisted for the erbacce-prize for Poetry 2026. He sips
+        coffee &amp; reads Manto. His work has appeared in
+        <em>Evergreen Review</em>, <em>Fahmidan Journal</em>,
+        <em>Strange Horizons</em>, <em>IHRAM Literary Magazine</em>,
+        <em>Eye To The Telescope</em>, <em>Twenty-two Twenty-eight</em>,
+        <em>Abyss &amp; Apex</em>, <em>Neon &amp; Smoke</em>,
+        <em>Winds Of Asia</em>, <em>4LPH4NUM3R1C</em>,
+        <em>Uncanny Magazine</em>, <em>Usawa Literary Review</em>,
+        <em>Native Voices II: The Cry of Creation</em>,
+        <em>Full Bleed</em>, <em>Ghudsavar</em>,
+        <em>Workers Write!</em>, and is forthcoming in
+        <em>Gutter Magazine</em>, <em>Southern Humanities Review</em>,
+        and <em>Cahava Literary Journal</em>.
+      </p>
+
+      <p class="contributor-social">
+        Instagram:
+        <a href="https://www.instagram.com/hannan.khan.official/"
+           target="_blank"
+           rel="noopener noreferrer">
+          @hannan.khan.official
+        </a>
+      </p>
+    </article>
+
+
+    <!-- JULIAN JACINTO -->
+    <article class="contributor-note">
+      <h3>
+        <a href="javascript:void(0)" onclick="showPage('julian-jacinto')">
+          Julian Jacinto
+        </a>
+      </h3>
+
+      <p class="contributor-work">
+        <em>Theme for Pitaya</em> ·
+        <em>We Had No Wings But Managed</em>
+      </p>
+
+      <p>
+        Julian Jacinto is a Filipino-American student poet based in New York
+        and an Executive Editor at <em>Polyphony Lit</em>. Nationally
+        recognized by the Alliance for Young Artists &amp; Writers and the
+        National Federation of State Poetry Societies, his work is published
+        or forthcoming in <em>Blue Marble Review</em>,
+        <em>Sunspot Lit</em>, <em>Eunoia Review</em>, and elsewhere.
+        He splits his remaining hours between writing, longboarding, and
+        squinting at cells in petri dishes.
+      </p>
+    </article>
+
+
+    <!-- LOIS WI -->
+    <article class="contributor-note">
+      <h3>
+        <a href="javascript:void(0)" onclick="showPage('lois-wi')">
+          Lois Wi
+        </a>
+      </h3>
+
+      <p class="contributor-work">
+        <em>Bail Body Blues</em> ·
+        <em>After prayer at 8:12PM EST</em> ·
+        <em>What Goes With Rain</em>
+      </p>
+
+      <p>
+        Lois Wi (they/any) is an afro-diasporic and queer writer and
+        gender-based violence specialist from the (American/Global) South,
+        now rooted in Oakland, California. An alumnus from Stanford University,
+        their studies in Human Biology inform how they use language to dissect
+        place, gender, culture and generational grief. They are currently
+        working on their first chapbook, <em>25th Street</em>.
+      </p>
+    </article>
+
+
+    <!-- Z. T. CORLEY -->
+    <article class="contributor-note">
+      <h3>
+        <a href="javascript:void(0)" onclick="showPage('zi-corley')">
+          Z. T. Corley
+        </a>
+      </h3>
+
+      <p class="contributor-work">
+        <em>Poem After Deana Lawson’s Sons of Cush, 2016</em> ·
+        <em>American :: African</em> ·
+        <em>American :: Black</em>
+      </p>
+
+      <p>
+        Z. T. Corley is an M.F.A. Candidate at Georgia College &amp; State
+        University, a recipient of the 2026 Intro Journal Awards, and has been
+        nominated for the <em>Best New Poets</em> Anthology. She is a reader
+        for <em>Callaloo</em>, <em>Sontag Mag</em>, and <em>Peach</em>.
+        Her work appears or is forthcoming in <em>Revolute</em>,
+        <em>Callaloo</em>, <em>Quarterly West</em>,
+        <em>Twisted Tongue Magazine</em>,
+        <em>Kitchen Table Quarterly</em>, and elsewhere. She is currently
+        working on a poetry collection.
+      </p>
+    </article>
+
+
+    <!-- SARA SURANI -->
+    <article class="contributor-note">
+      <h3>
+        <a href="javascript:void(0)" onclick="showPage('sara-surani')">
+          Sara Surani
+        </a>
+      </h3>
+
+      <p class="contributor-work">
+        <em>Mother Tongues</em> ·
+        <em>Carrying a Prayer</em> ·
+        <em>On Being</em> ·
+        <em>my mother’s god</em>
+      </p>
+
+      <p>
+        Sara Surani is a writer, activist, facilitator, and art
+        psychotherapist whose work bridges storytelling and social justice
+        from the Amazon rainforest to New York City. Co-founder of She is the
+        Universe and Nayaraq Stories, she works with grassroots and governments
+        to amplify marginalized voices through community organizing, women’s
+        empowerment, and collective healing. A daughter of Pakistani migrants,
+        she attended Harvard University, Tsinghua University, and New York
+        University and is a Fulbright and Schwarzman Scholar. Her debut book,
+        <em>Songs of My Grandmother</em>, was published by Hayhouse (2025)
+        and her work is also featured in the anthology,
+        <em>Coven of the East</em>. Sara finds home in many people and places
+        and is currently finding home in New York City.
+      </p>
+    </article>
+    
+    <div class="contributor-genre">Short Fiction</div>
+
+
+    <!-- R.K. PATEL -->
+    <article class="contributor-note">
+      <h3>
+        <a href="javascript:void(0)" onclick="showPage('rk-patel')">
+          R.K. Patel
+        </a>
+      </h3>
+
+      <p class="contributor-work">
+        <em>Cropped</em>
+      </p>
+
+      <p>
+        R.K. Patel is a writer based in New York City. His work has appeared
+        or is forthcoming in <em>ExPat Press</em>,
+        <em>Exacting Clam</em>, and elsewhere.
+      </p>
+    </article>
+
+
+    <!-- DANIEL GORDON -->
+    <article class="contributor-note">
+      <h3>
+        <a href="javascript:void(0)" onclick="showPage('daniel-gordon')">
+          Daniel Gordon
+        </a>
+      </h3>
+
+      <p class="contributor-work">
+        <em>Stranger to Stay</em>
+      </p>
+
+    <p>
+  Daniel Gordon is a writer based in Vienna, Austria. His work has
+  featured in <em>Long River Review</em> and is forthcoming in
+  <em>Apricity Press</em> and <em>Thimble</em>. He works for a local
+  newspaper and spends his free time writing short fiction and drinking
+  more tea than water. Find him on Instagram
+  <a
+    href="https://www.instagram.com/daniel_gordon_stories/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >@daniel_gordon_stories</a>.
+</p>
+    </article>
+
+
+    <!-- HIRA AMIR -->
+    <article class="contributor-note">
+      <h3>
+        <a href="javascript:void(0)" onclick="showPage('hira-amir')">
+          Hira Amir
+        </a>
+      </h3>
+
+      <p class="contributor-work">
+        <em>The Beauty Parlour</em>
+      </p>
+
+      <p>
+        Hira Amir is a fiction short story writer based in Karachi, Pakistan.
+        Her work appears in <em>Ultramarine Literary Review</em>, which
+        focuses on grief, interiority, and homes.
+      </p>
+    </article>
+
+
+   <!-- HOLLY SYKES -->
+<article class="contributor-note">
+  <h3>
+    <a href="javascript:void(0)" onclick="showPage('holly-sykes')">
+      Holly Sykes
+    </a>
+  </h3>
+
+  <p class="contributor-work">
+    <em>My Bethnal Green Queen</em>
+  </p>
+
+  <p>
+    Holly Sykes is a published author of short fiction and writer of female-led novels.
+    Holly won the Page Turner Award for Best Contemporary Fiction 2024 with her unpublished
+    manuscript <em>Wooden Dolls</em>. Previously, it won the Portfolio Prize 2023
+    (MA, University of Lancaster). You can find her short stories and poetry in
+    <em>Stand Magazine</em>, and <em>Dreamcatcher Magazine</em> (UK) and
+    <em>The Apostrophe</em> and <em>Voice and Verse</em> (HK). Alongside working
+    on her current novel and short stories, Holly also publishes
+    <em>Beyond the Book Cover</em> on Substack,
+    <a
+      href="https://substack.com/@hollysykes1"
+      target="_blank"
+      rel="noopener noreferrer"
+    >https://substack.com/@hollysykes1</a>,
+    which is featured in the Spring 2026 issue of <em>Mslexia</em>.
+    Originally from the UK, she now lives in Hong Kong.
+  </p>
+</article>
+
+    <!-- PENNY WEI -->
+    <article class="contributor-note">
+      <h3>
+        <a href="javascript:void(0)" onclick="showPage('penny-wei')">
+          Penny Wei
+        </a>
+      </h3>
+
+      <p class="contributor-work">
+        <em>Old Gold</em>
+      </p>
+
+      <p>
+        Penny Wei is from Shanghai and Massachusetts. She can be seen in
+        <em>West Trestle Review</em>, <em>Inlandia Journal</em> and
+        <em>The Central Dissent: A Journal of Gender and Sexuality</em>.
+        She is the author of <em>Her Other Fragile Inheritances</em>
+        (Glass Poetry Press, 2026) and <em>Animism</em>
+        (Bottlecap Press, 2026).
+      </p>
+    </article>
+<div class="contributor-genre">Creative Nonfiction</div>
+
+    <!-- PAUL HOSTOVSKY -->
+    <article class="contributor-note">
+      <h3>
+        <a href="javascript:void(0)" onclick="showPage('paul-hostovsky')">
+          Paul Hostovsky
+        </a>
+      </h3>
+
+      <p class="contributor-work">
+        <em>Deaf Connections</em>
+      </p>
+
+      <p>
+        Paul Hostovsky makes his living in Boston as a sign language
+        interpreter and braille instructor. His poems and essays appear widely
+        online and in print. He has won a Pushcart Prize, two Best of the Net
+        Awards, the FutureCycle Poetry Book Prize, and has been featured on
+        <em>Poetry Daily</em>, <em>Verse Daily</em>, <em>Only Poems</em>,
+        and <em>The Writer's Almanac</em>. His latest book,
+        <em>PERFECT DISAPPEARANCES</em> (Kelsay, 2025), was shortlisted for
+        a Massachusetts Book Award. Visit him at:
+        <a href="https://paulhostovsky.com/"
+           target="_blank"
+           rel="noopener noreferrer">paulhostovsky.com</a>.
+      </p>
+    </article>
+
+
+    <!-- JANE ANN VALENTINE -->
+    <article class="contributor-note">
+      <h3>
+        <a href="javascript:void(0)" onclick="showPage('jane-ann-valentine')">
+          Jane Ann Valentine
+        </a>
+      </h3>
+
+      <p class="contributor-work">
+        <em>Just Pick One</em>
+      </p>
+
+      <p>
+        Jane Ann Valentine is a Filipina American Southern writer living in
+        New Jersey. She studied at Smith College and the Sorbonne. Her writing
+        has appeared or is forthcoming in <em>Liminal Lit</em>,
+        <em>Hippocampus Magazine</em>, <em>Barely South Review</em>,
+        <em>HerStry</em>, <em>Ember &amp; Vine Nonfiction Anthology</em> and
+        <em>There’s Nothing a Chocolate Chip Cookie Can’t Fix</em>. Her work
+        has been recognized with <em>Barely South Review</em>’s Summer 2025
+        Nonfiction Prize, the <em>Ember &amp; Vine Press</em> Nonfiction
+        Judges’ Runner-Up Prize, the Nor’Eastern Playwriting Prize, and
+        AAFilmLab’s Best Screenplay Award. When she’s not being walked by her
+        Old English Sheepdog, Miles, she’s at work on her first novel.
+      </p>
+    </article>
+
+
+    <!-- NATHAN COVER -->
+    <article class="contributor-note">
+      <h3>
+        <a href="javascript:void(0)" onclick="showPage('nathan-cover')">
+          Nathan Cover
+        </a>
+      </h3>
+
+      <p class="contributor-work">
+        <em>A Good Cheese</em>
+      </p>
+
+      <p>
+        Nathan Cover is a writer, teacher, and traveler who lives in Chicago.
+        He served as a Peace Corps volunteer in Romania from 2004–2006.
+        His nonfiction has been published in <em>Barzakh</em>,
+        <em>Hypertext</em>, and <em>LAROLA</em> magazines, among others.
+      </p>
+    </article>
+
+
+   <!-- CHIDERA UDOCHUKWU-NDUKA -->
+<article class="contributor-note">
+  <h3>
+    <a
+      href="javascript:void(0)"
+      onclick="showPage('chidera-udochukwu-nduka')"
+    >
+      Chidera Udochukwu-Nduka
+    </a>
+  </h3>
+
+  <p class="contributor-work">
+    <em>Fresh Water, Salt Water</em>
+  </p>
+
+  <p>
+    Chidera Udochukwu-Nduka is an award-winning Nigerian-Igbo writer,
+    screenwriter and pharmacist. She won First Prize in the 2025
+    <em>Iskanchi Magazine Prize</em> and the Letters category of the 2025
+    <em>LIGHT Magazine Contest</em>, second prize in the 2024
+    <em>Dissolution Climate Change Essay Contest</em> (Litfest Bergen, Norway)
+    and was runner-up in the 2024
+    <em>South African Bloody Parchment Horrorfest</em>. She holds the Kokonut
+    Head Writing Residency and was shortlisted for the 2025
+    <em>Afro-Abebi Award for Non-Fiction</em> and the 2026
+    <em>Dirges for Harmattan Poetry Contest</em>. Her work has appeared in
+    <em>Isele Magazine</em>, <em>Brittle Paper</em>,
+    <em>Midnight &amp; Indigo</em>, <em>Lagos Review</em>, and several
+    international anthologies, including
+    <em>Invisible Chains: Stories of Migrants</em>.
+  </p>
+</article>
+
+</div>
+
+  </div>
+</section>
+
+<!-- ======================================== -->
+<!-- ISSUE II: AFTER — FORTHCOMING -->
+<!-- ======================================== -->
+
+<section id="issue2" class="section">
+  <div class="issue-page issue2-preview">
+
+    <div class="issue-header">
+      <p class="issue-number">Issue II</p>
+
+      <h2 class="issue-title"><em>After</em></h2>
+
+      <p class="issue-theme">
+        What remains, what changes, and what begins.
+      </p>
+
+      <p class="issue-date">Forthcoming October 2026</p>
+    </div>
+
+
+    <div class="issue2-status">
+      <p class="issue2-status-label">Currently in Editorial Review</p>
+
+      <p class="issue2-status-text">
+        Thank you to everyone who submitted to <em>After</em>.
+        Our editorial team is currently reviewing submissions,
+        with Issue II scheduled for publication in the coming weeks.
+      </p>
+    </div>
+
+
+    <div class="issue2-details">
+
+      <div class="issue2-detail">
+        <span>Theme</span>
+        <p><em>After</em></p>
+      </div>
+
+      <div class="issue2-detail">
+        <span>Genres</span>
+        <p>Poetry · Fiction · CNF</p>
+      </div>
+
+      <div class="issue2-detail">
+        <span>Honorarium</span>
+        <p>$100 / contributor</p>
+      </div>
+
+      <div class="issue2-detail">
+        <span>Status</span>
+        <p>Submissions closed</p>
+      </div>
+
+    </div>
+
+
+    <p class="issue2-description">
+      <em>After</em> explores what remains, what changes, and what begins
+      following the moments that shape us—from memory, grief, and migration
+      to joy, family, identity, love, and transformation.
+    </p>
+
+  </div>
+</section>
+<!-- ======================================== -->
+<!-- HANNAN KHAN CONTRIBUTOR PAGE -->
+<!-- ======================================== -->
 <!-- ======================================== -->
 <!-- HANNAN KHAN CONTRIBUTOR PAGE -->
 <!-- ======================================== -->
