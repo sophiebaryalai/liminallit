@@ -2454,3 +2454,606 @@ html {
 .contributor-genre:first-child {
   margin-top: 0;
 }
+
+/* ======================================== */
+/* ISSUE II: AFTER                          */
+/* Paste at the very END of style.css.      */
+/* Only affects Issue II; Issue I unchanged */
+/* ======================================== */
+
+/* --- Page width --- */
+#issue2.after-issue {
+  max-width: 900px;
+}
+
+/* --- Turn off site-wide effects that don't suit this layout --- */
+.after-issue p::before,
+.after-page p::before {
+  display: none !important;
+}
+
+.after-issue p {
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
+
+.after-issue a::before,
+.after-issue a::after {
+  display: none !important;
+}
+
+/* --- Title plate --- */
+.after-plate {
+  position: relative;
+  max-width: 600px;
+  margin: 40px auto 80px;
+  padding: 52px 24px;
+  text-align: center;
+  background: var(--white);
+  border: 1px solid var(--gold);
+  outline: 1px solid var(--gold);
+  outline-offset: 7px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+}
+
+.after-plate::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(240, 247, 255, 0.9), transparent 70%);
+  pointer-events: none;
+}
+
+.after-plate > * {
+  position: relative;
+}
+
+.after-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.after-title {
+  margin: 4px 0 10px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(3.4rem, 9vw, 5.8rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: #0F2638;
+}
+
+.after-theme {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  color: #1E3A50;
+}
+
+.after-date {
+  margin-top: 8px;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #1E3A50;
+}
+
+/* --- Layout: Editor's Note on top, contents below --- */
+.after-split {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.after-left {
+  position: static;
+}
+
+/* --- Editor's note --- */
+.after-note {
+  padding: 40px 44px;
+  background: linear-gradient(to bottom right, var(--soft-blue), rgba(240, 247, 255, 0.35));
+  border-top: 2px solid var(--gold);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.92rem;
+  line-height: 1.95;
+  color: var(--navy);
+  text-align: left;
+}
+
+.after-note p {
+  margin: 0;
+}
+
+.after-note p + p {
+  margin-top: 14px;
+}
+
+.after-note .after-note-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.after-note .after-note-close {
+  margin-top: 18px;
+  font-style: italic;
+}
+
+.after-note .after-note-sig {
+  margin-top: 4px !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.after-note .after-note-role {
+  margin-top: 0 !important;
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+/* --- Stats --- */
+.after-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 22px;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+}
+
+.after-stats div {
+  padding: 16px 6px;
+  text-align: center;
+  border-right: 1px solid rgba(184, 134, 11, 0.25);
+}
+
+.after-stats div:last-child {
+  border-right: none;
+}
+
+.after-stats strong {
+  display: block;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--gold);
+}
+
+.after-stats span {
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+/* --- Contents --- */
+.after-contents {
+  text-align: left;
+}
+
+.after-genre {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 44px 0 6px;
+  padding-bottom: 6px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  color: #0F2638;
+  border-bottom: 1px solid var(--gold);
+}
+
+.after-genre:first-child {
+  margin-top: 0;
+}
+
+.after-genre span {
+  font-size: 0.75rem;
+  font-style: normal;
+  letter-spacing: 2px;
+  color: var(--gold);
+}
+
+.after-issue a.after-row {
+  display: flex;
+  gap: 14px;
+  margin: 0 -14px;
+  padding: 15px 14px;
+  color: var(--navy);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.after-issue a.after-row:hover {
+  background: var(--white);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  transform: translateX(4px);
+}
+
+.after-num {
+  flex-shrink: 0;
+  width: 26px;
+  padding-top: 3px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.8rem;
+  color: var(--gold);
+}
+
+.after-name {
+  display: block;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #0F2638;
+  transition: color 0.3s ease;
+}
+
+.after-row:hover .after-name {
+  color: var(--gold);
+}
+
+.after-titles {
+  margin-top: 4px;
+  list-style: none;
+}
+
+.after-titles li {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: #1E3A50;
+}
+
+/* ======================================== */
+/* ISSUE II WRITER PAGES                    */
+/* ======================================== */
+
+.after-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.after-tag {
+  padding: 6px 14px;
+  font-size: 0.62rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  border-radius: 20px;
+}
+
+.after-rule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+  font-size: 0.75rem;
+  color: var(--gold);
+}
+
+.after-rule::before,
+.after-rule::after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.after-page .poem-entry + .poem-entry {
+  margin-top: 100px;
+}
+
+.after-bio {
+  margin-top: 70px;
+  padding: 24px 28px;
+  background: linear-gradient(to right, var(--soft-blue), rgba(240, 247, 255, 0.4));
+  border-left: 3px solid var(--gold);
+}
+
+@media (max-width: 600px) {
+  #issue2.after-issue {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .after-plate {
+    margin: 20px 6px 56px;
+    padding: 40px 18px;
+    outline-offset: 4px;
+  }
+
+  .after-issue a.after-row {
+    margin: 0;
+    padding: 14px 4px;
+  }
+}
+
+/* --- Poem helpers for Issue II --- */
+.after-indent {
+  display: inline-block;
+  padding-left: 2em;
+}
+
+.after-short-poem {
+  max-width: 420px;
+}
+
+/* --- Dedications and author notes --- */
+.after-dedication {
+  margin: 14px 0 0;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.9rem;
+  color: #1E3A50;
+}
+
+.after-notes {
+  max-width: 680px;
+  margin: 60px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(184, 134, 11, 0.35);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: #1E3A50;
+  text-align: left;
+}
+
+.after-notes p {
+  margin: 0;
+}
+
+.after-notes .after-notes-label {
+  margin-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* Dedication set off to the right, as in the writer's manuscript.
+   The invisible spacer is the start of the poem's first line, so the
+   dedication begins at the same point above the poem as in her file. */
+.after-dedication-line {
+  max-width: 680px;
+  margin: 2px auto 26px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.02rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.after-dedication-spacer {
+  visibility: hidden;
+}
+
+.after-dedication-line .after-dedication {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .after-dedication-line {
+    white-space: normal;
+    padding-left: 2em;
+  }
+
+  .after-dedication-spacer {
+    display: none;
+  }
+}
+
+/* --- Epigraphs ("After ...") at the start of a poem --- */
+.after-epigraph {
+  margin: 0 0 31px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.9rem;
+  color: #1E3A50;
+  text-align: left;
+}
+
+/* --- Indented single line (e.g. a menu line) --- */
+.after-menu-line {
+  padding-left: 3em;
+}
+
+/* --- Shape poems: letters placed exactly as in the manuscript --- */
+.after-shape {
+  position: relative;
+  width: 15em;
+  height: 12.6em;
+  font-style: italic;
+}
+
+.after-shape span {
+  position: absolute;
+  line-height: 1;
+}
+
+/* --- Field poems: words placed by measured position from the manuscript --- */
+.after-field-text {
+  max-width: none;
+}
+
+.after-field-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.after-field {
+  position: relative;
+  width: 49em;
+  margin: 0 auto;
+  font-size: max(10.5px, min(1.02rem, calc((100vw - 48px) / 49)));
+  line-height: 1.4;
+}
+
+.after-field span {
+  position: absolute;
+  white-space: nowrap;
+}
+
+.poem-entry.after-wide {
+  max-width: none;
+}
+
+/* --- A gap inside a title, kept from the manuscript --- */
+.after-title-gap {
+  display: inline-block;
+  width: 2.4em;
+}
+
+/* --- Mixed alignment within a poem, as in the manuscript --- */
+.after-align-right {
+  text-align: right;
+}
+
+.after-align-center {
+  text-align: center;
+}
+
+/* Italic block that starts just left of the page's middle (46% across),
+   moving left on small screens so it never runs off the edge */
+.after-offset-block {
+  padding-left: min(46%, calc(100% - 16.5em));
+}
+
+/* --- Short fiction: block paragraphs with a space between, as in the manuscript --- */
+.after-story p {
+  margin: 0 0 1.35em;
+  font-size: inherit;
+  line-height: 1.95;
+  text-align: left;
+}
+
+.after-story p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Short fiction with indented paragraphs (half-inch first-line indent,
+   no space between paragraphs), as in the manuscript --- */
+.after-story-indented p {
+  margin: 0;
+  text-indent: 3em;
+}
+
+/* --- Short fiction where some paragraphs are indented and some are flush
+   (flush after each scene break), as in the manuscript --- */
+.after-story-mixed p {
+  margin: 0;
+  text-indent: 0;
+}
+
+.after-story-mixed p.ind {
+  text-indent: 3em;
+}
+
+/* --- Subtitle under a story title --- */
+.after-subtitle {
+  margin: -6px 0 14px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: #1E3A50;
+}
+
+/* --- Editor and thanks credits under a story --- */
+.after-credits {
+  max-width: 680px;
+  margin: 40px auto 0;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.8;
+  color: #1E3A50;
+  text-align: left;
+}
+
+.after-credits p {
+  margin: 0;
+}
+
+/* --- A second bio in the same box --- */
+.after-bio .after-bio-second {
+  margin-top: 26px;
+}
+
+/* --- Scene-break marks sit at the margin with no indent --- */
+.after-story-indented p.after-break {
+  text-indent: 0;
+}
+
+/* --- A blank line between scenes, kept from the manuscript --- */
+.after-story .after-space {
+  height: 1em;
+  margin: 0;
+}
+
+/* --- Short fiction with indented paragraphs AND a line between them,
+   and centered asterisk breaks, as in the manuscript --- */
+.after-story-spaced-indent p {
+  text-indent: 3em;
+}
+
+.after-story p.after-break-center {
+  text-indent: 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* --- Section headings inside a story (e.g. "Two", "Twenty-One") --- */
+.after-story .after-section-title {
+  margin: 56px 0 24px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #0F2638;
+}
+
+.after-story .after-section-title:first-child {
+  margin-top: 0;
+}
+
+/* --- First paragraph after a blank-line break sits flush, as in the manuscript --- */
+.after-story-indented p.flush {
+  text-indent: 0;
+}
+
+/* --- A smaller, secondary note inside a contributor entry
+   (e.g. an English-language editor's bio under the author's) --- */
+#issue2-contributors .contributor-note > p.contributor-sub {
+  margin: 18px 0 0;
+  padding-left: 16px;
+  border-left: 2px solid rgba(184, 134, 11, 0.35);
+  color: #1E3A50;
+  font-size: 0.8rem;
+  line-height: 1.75;
+}
+
+#issue2-contributors .contributor-sub-label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--gold);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
