@@ -3057,3 +3057,36 @@ html {
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
+
+/* ======================================== */
+/* ISSUE III — SUBMIT PAGE BUTTON */
+/* ======================================== */
+
+.issue3-coming-soon .btn-primary {
+  display: inline-block;
+  padding: 18px 42px !important;
+  background: var(--navy) !important;
+  color: var(--white) !important;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.issue3-coming-soon .btn-primary:hover {
+  background: #24405A !important;
+  color: var(--white) !important;
+}
+
+.issue3-coming-soon .btn-primary::before {
+  display: none;
+}
+
+.issue-review-card .issue-three-teaser a {
+  color: var(--navy) !important;
+  border-bottom: 1px solid rgba(26, 46, 64, 0.3);
+  padding: 0 0 2px;
+}
+
+.issue-review-card .issue-three-teaser a:hover {
+  color: var(--gold) !important;
+}
