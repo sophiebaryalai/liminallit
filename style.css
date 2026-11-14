@@ -3095,17 +3095,15 @@ html {
 /* MADELINE PHILLIPS — CRINOIDS (A FREEZING HAIBUN) */
 /* ======================================== */
 
-/* Page 1 in Arial, matching the author's manuscript */
-.crinoids-p1 {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-/* Pages 2 and 3: each surviving word sits at its exact position from the
-   manuscript. The page keeps its proportions and scrolls sideways on
-   narrow phones instead of rewrapping. */
+/* Pages 2 and 3 (erasure): every surviving word is centered on its exact
+   position and baseline from the author's manuscript, in the issue font,
+   with its width matched to the manuscript. The page keeps its proportions
+   and scrolls sideways on narrow phones instead of rewrapping. */
 .crinoids-erasure-scroll {
-  max-width: 650px;
-  margin: 4.5em auto 0;
+  /* Wide enough that the erasure text is the same size as page 1 */
+  width: min(823px, calc(100vw - 32px));
+  margin: 4.5em 0 0 50%;
+  transform: translateX(-50%);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -3113,10 +3111,10 @@ html {
 .crinoids-erasure-page {
   position: relative;
   width: 100%;
-  min-width: 520px;
+  min-width: 600px;
   aspect-ratio: 470.5 / 640.5;
   container-type: inline-size;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Libre Baskerville', serif;
   color: #1E3A50;
 }
 
@@ -3124,7 +3122,7 @@ html {
   position: absolute;
   white-space: nowrap;
   line-height: 1;
-  font-size: calc(100cqw * 11 / 470.5);
+  font-size: calc(100cqw * 9.33 / 470.5);
 }
 
 .crinoids-erasure-page .b {
