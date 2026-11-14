@@ -3090,3 +3090,20 @@ html {
 .issue-review-card .issue-three-teaser a:hover {
   color: var(--gold) !important;
 }
+
+/* ======================================== */
+/* MADELINE PHILLIPS — CRINOIDS ERASURE PAGES */
+/* ======================================== */
+
+.crinoids-erasure {
+  margin-top: 4.5em;
+}
+
+.crinoids-erasure .erased {
+  color: transparent;
+}
+
+.crinoids-erasure-title {
+  font-weight: 700;
+  margin: 0 0 1.4em;
+}
