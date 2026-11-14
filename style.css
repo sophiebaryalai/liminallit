@@ -2539,6 +2539,26 @@ html {
   color: #1E3A50;
 }
 
+/* --- Issue II cover --- */
+.after-cover {
+  max-width: 340px;
+  margin: -24px auto 80px;
+}
+
+.after-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 18px 40px rgba(15, 38, 56, 0.16);
+}
+
+@media (max-width: 600px) {
+  .after-cover {
+    max-width: 260px;
+    margin: -16px auto 56px;
+  }
+}
+
 /* --- Layout: Editor's Note on top, contents below --- */
 .after-split {
   display: flex;
