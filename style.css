@@ -3092,18 +3092,41 @@ html {
 }
 
 /* ======================================== */
-/* MADELINE PHILLIPS — CRINOIDS ERASURE PAGES */
+/* MADELINE PHILLIPS — CRINOIDS (A FREEZING HAIBUN) */
 /* ======================================== */
 
-.crinoids-erasure {
-  margin-top: 4.5em;
+/* Page 1 in Arial, matching the author's manuscript */
+.crinoids-p1 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.crinoids-erasure .erased {
-  color: transparent;
+/* Pages 2 and 3: each surviving word sits at its exact position from the
+   manuscript. The page keeps its proportions and scrolls sideways on
+   narrow phones instead of rewrapping. */
+.crinoids-erasure-scroll {
+  max-width: 650px;
+  margin: 4.5em auto 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-.crinoids-erasure-title {
+.crinoids-erasure-page {
+  position: relative;
+  width: 100%;
+  min-width: 520px;
+  aspect-ratio: 470.5 / 640.5;
+  container-type: inline-size;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #1E3A50;
+}
+
+.crinoids-erasure-page span {
+  position: absolute;
+  white-space: nowrap;
+  line-height: 1;
+  font-size: calc(100cqw * 11 / 470.5);
+}
+
+.crinoids-erasure-page .b {
   font-weight: 700;
-  margin: 0 0 1.4em;
 }
