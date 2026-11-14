@@ -2487,21 +2487,16 @@ html {
 .after-plate {
   position: relative;
   max-width: 600px;
-  margin: 40px auto 80px;
-  padding: 52px 24px;
+  margin: 40px auto 44px;
+  padding: 0 24px;
   text-align: center;
-  background: var(--white);
-  border: 1px solid var(--gold);
-  outline: 1px solid var(--gold);
-  outline-offset: 7px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
 }
 
 .after-plate::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(240, 247, 255, 0.9), transparent 70%);
+  display: none;
   pointer-events: none;
 }
 
@@ -2542,7 +2537,7 @@ html {
 /* --- Issue II cover --- */
 .after-cover {
   max-width: 340px;
-  margin: -24px auto 80px;
+  margin: 0 auto 80px;
 }
 
 .after-cover img {
@@ -2555,7 +2550,7 @@ html {
 @media (max-width: 600px) {
   .after-cover {
     max-width: 260px;
-    margin: -16px auto 56px;
+    margin: 0 auto 56px;
   }
 }
 
@@ -2804,9 +2799,8 @@ html {
   }
 
   .after-plate {
-    margin: 20px 6px 56px;
-    padding: 40px 18px;
-    outline-offset: 4px;
+    margin: 20px 6px 32px;
+    padding: 0 18px;
   }
 
   .after-issue a.after-row {
