@@ -2559,6 +2559,17 @@ html {
   }
 }
 
+/* --- Issue I cover (same look as Issue II) --- */
+.issue1-cover {
+  margin: -35px auto 75px;
+}
+
+@media (max-width: 600px) {
+  .issue1-cover {
+    margin: -30px auto 56px;
+  }
+}
+
 /* --- Layout: Editor's Note on top, contents below --- */
 .after-split {
   display: flex;
